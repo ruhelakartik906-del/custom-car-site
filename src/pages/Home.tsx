@@ -37,48 +37,8 @@ const Home = () => {
 
   return (
     <div>
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={heroCar} alt="Luxury SUV with mirror ceramic coating finish" className="h-full w-full object-cover" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-gradient-overlay" />
-          <div className="absolute inset-0 bg-background/40" />
-        </div>
-        <div className="relative container mx-auto min-h-[88vh] flex items-center">
-          <div className="max-w-3xl">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-5 animate-fade-in">Pune's Premier Detail Studio</p>
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-8xl leading-[0.95] text-foreground animate-fade-up">
-              Liquid Glass.
-              <br />
-              <span className="italic text-gold">Endless</span> Reflection.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg text-foreground/85 leading-relaxed">
-              We treat every Scorpio, Fortuner and luxury machine like a museum piece — ceramic coatings, PPF and paint correction performed in a dust-controlled studio.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Link to="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-gold text-primary-foreground rounded-sm text-sm tracking-[0.2em] uppercase hover:shadow-gold transition-smooth">
-                Book Consultation <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link to="/gallery" className="inline-flex items-center gap-2 px-7 py-3.5 border border-foreground/30 text-foreground rounded-sm text-sm tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-smooth">
-                View Our Work
-              </Link>
-            </div>
-
-            <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
-              {[
-                { n: "1200+", l: "Cars Detailed" },
-                { n: "10 Yrs", l: "Experience" },
-                { n: "4.9★", l: "Avg. Rating" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-3xl text-gold">{s.n}</div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{s.l}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* HERO SLIDER */}
+      <HeroSlider />
 
       {/* INTRO */}
       <section className="py-24 border-b border-border">
