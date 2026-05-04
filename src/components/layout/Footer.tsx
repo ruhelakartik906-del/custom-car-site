@@ -1,0 +1,67 @@
+import { Link } from "react-router-dom";
+import { Sparkles, Instagram, Facebook, Youtube, MapPin, Phone, Mail } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="border-t border-border bg-secondary/30 mt-24">
+      <div className="container mx-auto py-16 grid gap-12 lg:grid-cols-4">
+        <div>
+          <Link to="/" className="flex items-center gap-2 mb-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gradient-gold">
+              <Sparkles className="h-5 w-5 text-primary-foreground" />
+            </div>
+            <div className="font-display text-2xl">Auro<span className="text-gold">.</span></div>
+          </Link>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Crafting mirror-perfect finishes for India's most loved SUVs since 2015.
+          </p>
+          <div className="flex gap-3 mt-5">
+            {[Instagram, Facebook, Youtube].map((Icon, i) => (
+              <a key={i} href="#" className="h-9 w-9 grid place-items-center rounded-sm border border-border hover:border-gold hover:text-gold transition-smooth">
+                <Icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-4">Services</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link to="/services/ceramic-coating" className="hover:text-gold">Ceramic Coating</Link></li>
+            <li><Link to="/services/ppf" className="hover:text-gold">Paint Protection Film</Link></li>
+            <li><Link to="/services/car-detailing" className="hover:text-gold">Car Detailing</Link></li>
+            <li><Link to="/services/paint-correction" className="hover:text-gold">Paint Correction</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-4">Company</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link to="/about" className="hover:text-gold">About Us</Link></li>
+            <li><Link to="/gallery" className="hover:text-gold">Gallery</Link></li>
+            <li><Link to="/blog" className="hover:text-gold">Blog</Link></li>
+            <li><Link to="/pricing" className="hover:text-gold">Pricing</Link></li>
+            <li><Link to="/contact" className="hover:text-gold">Contact</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-4">Visit Studio</h4>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li className="flex gap-3"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Plot 24, Industrial Area Phase II, Pune 411019</li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /> +91 98765 43210</li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> hello@aurodetail.in</li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-border/60">
+        <div className="container mx-auto py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} Auro Detail Studio. All rights reserved.</p>
+          <p>Crafted with precision in Pune, India.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
