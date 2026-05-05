@@ -257,58 +257,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PROCESS */}
-      <section className="py-24 border-b border-border bg-secondary/20">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">The Process</p>
-            <h2 className="font-display text-4xl md:text-5xl">Five days. Zero shortcuts.</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {[
-              { n: "01", t: "Inspection", d: "Paint thickness mapped panel by panel under inspection lights." },
-              { n: "02", t: "Decontamination", d: "Iron fall-out, tar and bonded contaminants removed chemically and by clay." },
-              { n: "03", t: "Correction", d: "Multi-stage machine polish to remove swirls, holograms and RIDS." },
-              { n: "04", t: "Coating", d: "9H ceramic applied in controlled humidity, layered for depth." },
-              { n: "05", t: "Cure & QC", d: "48-hour cure, IPA wipe-down, final inspection under LED tunnel." },
-            ].map((p) => (
-              <div key={p.n} className="relative">
-                <div className="font-display text-6xl text-gold/30">{p.n}</div>
-                <h3 className="mt-2 font-display text-2xl">{p.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* VEHICLES */}
-      <section className="py-24 border-b border-border">
-        <div className="container mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">SUV Specialists</p>
-            <h2 className="font-display text-4xl md:text-5xl">Built for Indian Roads</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">From the rugged Scorpio to the imposing Fortuner — we know every panel.</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[{img: scorpio, name: "Mahindra Scorpio", to: "/vehicles/scorpio"}, {img: fortuner, name: "Toyota Fortuner", to: "/vehicles/fortuner"}].map((v) => (
-              <Link key={v.name} to={v.to} className="group relative overflow-hidden rounded-sm border border-border">
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img src={v.img} alt={v.name} loading="lazy" className="h-full w-full object-cover transition-smooth group-hover:scale-105" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 flex justify-between items-end">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.3em] text-gold">Specialist Care</p>
-                    <h3 className="font-display text-3xl mt-1">{v.name}</h3>
-                  </div>
-                  <ArrowRight className="h-6 w-6 text-gold group-hover:translate-x-1 transition-smooth" />
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* TESTIMONIALS */}
       <section className="py-24 border-b border-border bg-secondary/20">
