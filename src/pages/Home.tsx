@@ -78,6 +78,50 @@ const Home = () => {
         </div>
       </section>
 
+      {/* EXPERIENCE & TRUST */}
+      <section className="py-24 border-b border-border">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="overflow-hidden rounded-[20px] shadow-elegant">
+              <img
+                src={dealerHandover}
+                alt="Dealer handing car keys to a happy customer"
+                loading="lazy"
+                width={1280}
+                height={1024}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-xs tracking-[0.4em] uppercase text-gold mb-4">Experience & Trust</p>
+              <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
+                Driving Happiness Since <span className="text-gold">2015</span>
+              </h2>
+              <p className="mt-6 text-muted-foreground leading-relaxed">
+                At Auro Detail Studio, we don't just sell cars; we deliver dreams. Our commitment is to provide the finest pre-owned luxury vehicles, each undergoing a rigorous 150-point quality check to ensure you drive home with complete peace of mind.
+              </p>
+
+              <div className="mt-10 grid grid-cols-2 gap-5">
+                {[
+                  { num: "1200+", label: "Happy Families Served" },
+                  { num: "50+", label: "Luxury Brands in Stock" },
+                  { num: "4.9/5", label: "Customer Trust Rating" },
+                  { num: "100%", label: "Certified Quality Assurance" },
+                ].map((s) => (
+                  <div
+                    key={s.label}
+                    className="rounded-xl border border-border bg-card p-6 hover:border-gold transition-smooth"
+                  >
+                    <div className="font-display text-4xl md:text-5xl font-bold text-gold">{s.num}</div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-snug">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section className="py-24 border-b border-border">
         <div className="container mx-auto">
