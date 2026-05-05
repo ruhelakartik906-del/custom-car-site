@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight, Car, SprayCan } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import ceramic from "@/assets/service-ceramic.jpg";
 import ppf from "@/assets/service-ppf.jpg";
@@ -41,36 +41,38 @@ const Home = () => {
       {/* HERO SLIDER */}
       <HeroSlider />
 
-      {/* INTRO */}
+      {/* PHILOSOPHY + 4-BOX GRID */}
       <section className="py-24 border-b border-border">
-        <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">The Philosophy</p>
-            <h2 className="font-display text-4xl md:text-5xl leading-tight">A finish so deep, it looks <em className="text-gold not-italic">wet</em>.</h2>
-            <div className="mt-6 h-px w-20 gold-divider" />
+        <div className="container mx-auto">
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-4">Our Philosophy</p>
+            <h2 className="font-display text-4xl md:text-5xl leading-tight">
+              A finish so deep, it looks <em className="text-gold not-italic">wet</em>.
+            </h2>
+            <div className="mt-6 h-px w-20 gold-divider mx-auto" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Detailing isn't a wash. It's restoration. Every panel is decontaminated, every micron of clear-coat measured, every swirl chased down under fluorescent inspection lights — long before a drop of coating touches your paint.
+              Detailing isn't a wash. It's restoration. Every panel is decontaminated, every micron of clear-coat measured, every swirl chased down under fluorescent inspection lights — long before a drop of coating touches your paint. We don't take more cars than our craftsmen can finish in a day. Patience is part of the price.
             </p>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              We don't take more cars than our craftsmen can finish in a day. Patience is part of the price.
-            </p>
-            <ul className="mt-8 space-y-3">
-              {["Dust-controlled detailing bay", "Calibrated paint-thickness gauges", "Genuine GYEON & Gtechniq products", "5-year warranty on coatings"].map((t) => (
-                <li key={t} className="flex gap-3 text-sm">
-                  <CheckCircle2 className="h-5 w-5 text-gold shrink-0" /> {t}
-                </li>
-              ))}
-            </ul>
           </div>
-          <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-elegant">
-              <img src={ceramic} alt="Ceramic coating water beading on hood" loading="lazy" className="h-full w-full object-cover" />
-            </div>
-            <div className="absolute -bottom-8 -left-8 hidden md:block bg-card border border-border p-6 shadow-elegant max-w-[220px]">
-              <Star className="h-5 w-5 text-gold" />
-              <p className="mt-3 text-sm italic text-foreground/90">"Best decision I made for my Fortuner. Looks better than showroom."</p>
-              <p className="mt-3 text-xs text-muted-foreground">— Aditya R.</p>
-            </div>
+
+          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { Icon: Car, title: "Paint Correction", text: "Safely remove swirls, scratches, and oxidation." },
+              { Icon: Shield, title: "Ceramic Coating", text: "Long-term hydrophobicity and high-gloss protection." },
+              { Icon: SprayCan, title: "Interior Detail", text: "Deep clean, steam sanitization, and conditioning." },
+              { Icon: Award, title: "Prestige Service", text: "Comprehensive detailing with fine-attention focus." },
+            ].map(({ Icon, title, text }) => (
+              <div
+                key={title}
+                className="group bg-card border border-border rounded-xl p-8 text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition-all duration-300 ease-in-out"
+              >
+                <div className="mx-auto h-16 w-16 grid place-items-center rounded-full bg-gold/10 mb-6 group-hover:bg-gold/20 transition-colors duration-300">
+                  <Icon className="h-8 w-8 text-gold" strokeWidth={1.25} />
+                </div>
+                <h3 className="font-display text-xl">{title}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
