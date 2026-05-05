@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight, Car, SprayCan, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, Shield, Sparkles, Droplets, Star, Award, Clock, CheckCircle2, Quote, ChevronLeft, ChevronRight, Car, SprayCan, Phone, MessageCircle, CalendarCheck, Headphones } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import ceramic from "@/assets/service-ceramic.jpg";
 import ppf from "@/assets/service-ppf.jpg";
@@ -126,8 +126,16 @@ const Home = () => {
       <section className="py-24 border-b border-border bg-secondary/20">
         <div className="container mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Featured Cars</p>
-            <h2 className="font-display text-4xl md:text-5xl">Our Premium Fleet</h2>
+            <div className="inline-flex items-center gap-2 rounded-full bg-green-100 text-green-700 px-4 py-1.5 text-xs font-semibold tracking-wide mb-5">
+              <CalendarCheck className="h-3.5 w-3.5" />
+              AVAILABLE IMMEDIATELY
+            </div>
+            <h2 className="font-display text-4xl md:text-5xl font-bold">
+              Explore Our <span className="text-gold">Premium</span> Fleet
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+              Ready-to-drive luxury SUVs, fully certified and detailed for your lifestyle.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
@@ -194,6 +202,26 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* FLOATING CONSULTATION CARD */}
+          <div className="max-w-3xl mx-auto mt-16">
+            <div className="bg-white rounded-2xl shadow-2xl border border-border p-10 text-center">
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-black">
+                Still Can't Decide? 🤔
+              </h3>
+              <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
+                Book a free consultation call with our expert car advisors to find the perfect vehicle for your lifestyle and budget.
+              </p>
+              <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="https://wa.me/910000000000" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-colors">
+                  <MessageCircle className="h-4 w-4" /> Chat Now
+                </a>
+                <a href="tel:+910000000000" className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-colors">
+                  <Headphones className="h-4 w-4" /> Talk to Advisor
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
