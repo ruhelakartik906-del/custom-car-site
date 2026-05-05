@@ -74,7 +74,7 @@ const HeroSlider = () => {
 
   return (
     <section className="relative">
-      <div className="relative h-[58vh] min-h-[400px] max-h-[560px] overflow-hidden bg-primary">
+      <div className="relative h-[480px] min-h-[450px] max-h-[500px] overflow-hidden bg-primary">
         {slides.map((s, i) => (
           <div
             key={i}
@@ -124,7 +124,7 @@ const HeroSlider = () => {
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-20 md:bottom-16 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-2 z-10">
           {slides.map((_, i) => (
             <button
               key={i}
@@ -137,29 +137,26 @@ const HeroSlider = () => {
       </div>
 
       {/* Bottom tabs floating */}
-      <div className="relative -mt-7 z-20">
-        <div className="container mx-auto">
-          <div className="flex justify-center gap-3 md:gap-4">
-            {tabs.map((t, i) => (
-              <button
-                key={t.label}
-                onClick={() => setTab(i)}
-                className={`px-6 md:px-10 h-14 rounded-full text-sm font-semibold tracking-widest transition-smooth shadow-elegant ${
-                  i === tab
-                    ? "bg-background text-foreground border border-border"
-                    : "bg-secondary text-foreground/70 hover:bg-background"
-                }`}
-              >
-                {t.label}
-              </button>
-            ))}
-          </div>
+      <div className="container mx-auto -mt-6 relative z-20 max-w-[1170px]">
+        <div className="flex justify-start gap-1 pl-2">
+          {tabs.map((t, i) => (
+            <button
+              key={t.label}
+              onClick={() => setTab(i)}
+              style={{ padding: "0 30px", fontSize: "14px" }}
+              className={`h-12 rounded-t-md font-semibold tracking-widest transition-smooth ${
+                i === tab
+                  ? "bg-card text-foreground border-t border-x border-border"
+                  : "bg-secondary text-foreground/70 hover:bg-card"
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
-      </div>
 
-      {/* Search/finder card */}
-      <div className="container mx-auto mt-6 mb-12">
-        <div className="bg-card border border-border rounded-2xl shadow-elegant p-6 md:p-8">
+        {/* Search/finder card */}
+        <div className="bg-card border border-border rounded-b-md rounded-tr-md shadow-elegant p-6 md:p-8 mb-10">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <h2 className="font-display text-xl md:text-2xl">{tabs[tab].heading}</h2>
             <div className="flex gap-2">
@@ -172,17 +169,17 @@ const HeroSlider = () => {
               key={`p1-${tab}`}
               type="text"
               placeholder={tabs[tab].placeholder1}
-              className="h-14 px-5 rounded-full bg-secondary/50 border border-border text-sm focus:outline-none focus:border-gold transition-smooth"
+              className="h-12 px-4 rounded-md bg-secondary/50 border border-border text-sm focus:outline-none focus:border-gold transition-smooth"
             />
             <input
               key={`p2-${tab}`}
               type="text"
               placeholder={tabs[tab].placeholder2}
-              className="h-14 px-5 rounded-full bg-secondary/50 border border-border text-sm focus:outline-none focus:border-gold transition-smooth"
+              className="h-12 px-4 rounded-md bg-secondary/50 border border-border text-sm focus:outline-none focus:border-gold transition-smooth"
             />
             <Link
               to={tabs[tab].to}
-              className="h-14 px-10 grid place-items-center rounded-full bg-gold text-primary text-sm font-semibold tracking-widest hover:shadow-gold transition-smooth"
+              className="h-12 px-10 grid place-items-center rounded-md bg-gold text-primary text-sm font-semibold tracking-widest hover:shadow-gold transition-smooth"
             >
               SEARCH
             </Link>

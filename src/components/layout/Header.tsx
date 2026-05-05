@@ -32,7 +32,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background shadow-sm">
       {/* Top row: logo + search + location/profile */}
       <div className="border-b border-border bg-background">
-        <div className="container mx-auto flex h-20 items-center gap-6">
+        <div className="container mx-auto flex h-[70px] items-center gap-6">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group shrink-0">
             <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gradient-gold shadow-gold">
@@ -45,8 +45,8 @@ const Header = () => {
           </Link>
 
           {/* Search bar */}
-          <div className="hidden md:flex flex-1 max-w-2xl mx-auto">
-            <div className="relative w-full">
+          <div className="hidden md:flex flex-1 justify-center mx-auto">
+            <div className="relative w-full max-w-[500px]">
               <input
                 type="text"
                 placeholder="Search for Services, Vehicles, Eg: Ceramic, or Fortuner"
