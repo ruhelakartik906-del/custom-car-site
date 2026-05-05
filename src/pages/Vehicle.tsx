@@ -157,20 +157,6 @@ const Vehicle = () => {
         </div>
       </section>
 
-      {/* PRICING */}
-      <section className="py-20 border-t border-border">
-        <div className="container mx-auto max-w-3xl">
-          <div className="bg-card border border-border rounded-2xl p-10 text-center shadow-elegant">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Pricing</p>
-            <h2 className="font-display text-4xl">Starting at <span className="text-gold">{v.startingPrice}</span></h2>
-            <p className="mt-4 text-muted-foreground">Final pricing depends on variant, condition and selected packages. Get a tailored quote in minutes.</p>
-            <Link to="/contact" className="mt-7 inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-primary-foreground rounded-xl text-sm tracking-[0.2em] uppercase hover:shadow-gold transition-smooth">
-              Request a Detailed Quote <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT CTA */}
       <section className="py-20 border-t border-border bg-secondary/30">
         <div className="container mx-auto max-w-3xl">
