@@ -165,7 +165,7 @@ const Home = () => {
             ].map((car) => (
               <div
                 key={car.name}
-                className="flex flex-col bg-card rounded-2xl shadow-lg overflow-hidden border border-border hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out"
+                className="flex flex-col bg-card rounded-2xl overflow-hidden border border-border hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out"
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img src={car.img} alt={car.name} loading="lazy" className="h-full w-full object-cover" />
