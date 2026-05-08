@@ -7,6 +7,7 @@ import fortunerThumb from "@/assets/vehicle-fortuner.jpg";
 
 const services = [
   { label: "Ceramic Coating", to: "/services/ceramic-coating" },
+  { label: "Graphene Coating", to: "/services/graphene-coating" },
   { label: "Paint Protection Film (PPF)", to: "/services/ppf" },
   { label: "Car Detailing", to: "/services/car-detailing" },
   { label: "Exterior Detailing", to: "/services/exterior-detailing" },
