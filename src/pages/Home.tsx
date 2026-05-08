@@ -425,6 +425,52 @@ const Home = () => {
                 ))}
               </ul>
             </div>
+            <div className="rounded-2xl border border-border bg-card p-8">
+              <h3 className="font-display text-2xl mb-4">Paint Correction in Meerut</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                Professional multi-stage machine polishing that restores gloss, clarity and smoothness to your paintwork.
+              </p>
+              <ul className="space-y-2 text-sm">
+                {["Removes Swirl Marks", "Removes Minor Scratches", "Removes Holograms", "Removes Water Spots", "Removes Paint Oxidation", "Restores Factory Finish"].map((b) => (
+                  <li key={b} className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold shrink-0" />{b}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-8">
+              <h3 className="font-display text-2xl mb-4">Interior Detailing in Meerut</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                Deep interior cleaning and sanitization that restores freshness, hygiene and luxury comfort inside your cabin.
+              </p>
+              <ul className="space-y-2 text-sm">
+                {["Deep Vacuum Cleaning", "Seat Shampooing", "Leather Conditioning", "Dashboard Polishing", "Steam Sanitization", "Odor Removal"].map((b) => (
+                  <li key={b} className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold shrink-0" />{b}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Why CLNHYGEN */}
+          <div className="mt-16">
+            <div className="text-center mb-10">
+              <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Why CLNHYGEN</p>
+              <h3 className="font-display text-3xl md:text-4xl">One of the Best Detailing Studios in Meerut</h3>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                { t: "Premium Quality Products", d: "Trusted professional-grade detailing products and advanced coating technologies." },
+                { t: "Skilled Professionals", d: "Trained experts who handle every vehicle with precision and care." },
+                { t: "Luxury Car Care Experience", d: "From hatchbacks to luxury SUVs and sports cars — premium service for every car." },
+                { t: "Customer Satisfaction Focused", d: "Quality workmanship, long-lasting protection and exceptional experience." },
+              ].map((f) => (
+                <div key={f.t} className="rounded-xl border border-border bg-card p-6 hover:border-gold hover:-translate-y-1 transition-all">
+                  <div className="h-10 w-10 grid place-items-center rounded-full bg-gold/10 mb-4">
+                    <BadgeCheck className="h-5 w-5 text-gold" />
+                  </div>
+                  <h4 className="font-display text-lg">{f.t}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.d}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-12 rounded-2xl bg-gradient-to-br from-card to-secondary/40 border border-border p-10 text-center">
