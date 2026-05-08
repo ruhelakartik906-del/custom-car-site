@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="border-t border-border bg-secondary/30 mt-24">
       <div className="container mx-auto py-16 grid gap-12 lg:grid-cols-4">
         <div>
-          <Link to="/" className="flex items-center gap-2 mb-4">
+          <Link to="/" className="flex items-center gap-2 -mt-8 mb-2">
             <img src={logo} alt="CLNHYGEN" className="h-40 w-auto object-contain" />
           </Link>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="mt-6 text-sm text-muted-foreground leading-relaxed">
             Premium car detailing studio in Meerut — PPF, ceramic coating, paint correction & luxury car care.
           </p>
           <div className="flex gap-3 mt-5">
