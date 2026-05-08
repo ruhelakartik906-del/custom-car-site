@@ -12,6 +12,7 @@ const services = [
   { label: "Exterior Detailing", to: "/services/exterior-detailing" },
   { label: "Car Spa & Foam Wash", to: "/services/car-spa" },
   { label: "Paint Correction", to: "/services/paint-correction" },
+  { label: "Dent Paint & Body Shop", to: "/services/dent-paint" },
 ];
 
 const vehicles = [
