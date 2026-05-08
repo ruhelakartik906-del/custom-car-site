@@ -18,6 +18,7 @@ const services = [
   { label: "Dent Paint & Body Shop", to: "/services/dent-paint" },
   { label: "Headlight Restoration", to: "/services/headlight-restoration" },
   { label: "Engine Bay Detailing", to: "/services/engine-bay-detailing" },
+  { label: "Anti Rust Coating", to: "/services/anti-rust-coating" },
 ];
 
 const vehicles = [

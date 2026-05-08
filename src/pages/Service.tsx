@@ -954,6 +954,84 @@ const data: Record<string, ServiceData> = {
       { q: "Which luxury brands do you handle?", a: "We detail BMW, Mercedes-Benz, Audi, Defender, Jaguar, Porsche, and many other premium vehicles." },
     ],
   },
+  "anti-rust-coating": {
+    eyebrow: "Underbody Rust Protection",
+    title: "Anti Rust Coating in Meerut",
+    subtitle: "Advanced underbody rust protection and anti-corrosion treatments to protect your vehicle from rust, moisture, mud, and harsh road conditions.",
+    img: ppf,
+    intro:
+      "Welcome to CLNHYGEN — your trusted destination for professional anti rust coating services in Meerut. We provide advanced underbody rust protection and anti-corrosion treatments designed to protect your vehicle from rust, moisture damage, corrosion, mud exposure, and harsh road conditions. Your vehicle's underbody is constantly exposed to water, dirt, road salt, stones, and environmental contaminants that can lead to rust formation over time. Our premium anti rust coating solutions help extend vehicle durability while maintaining underbody protection.",
+    benefits: [
+      "Helps Prevent Rust Formation",
+      "Protects Against Corrosion",
+      "Shields Underbody Surfaces",
+      "Improves Vehicle Durability",
+      "Reduces Moisture Damage",
+      "Protects Metal Components",
+      "Enhances Long-Term Vehicle Health",
+    ],
+    removes: {
+      heading: "Anti Rust Coating Protects Against",
+      items: ["Rust Formation", "Corrosion", "Moisture Damage", "Mud & Dirt Build-Up", "Metal Surface Deterioration", "Water Exposure", "Road Debris Damage"],
+    },
+    whyUs: [
+      "Premium Anti Rust Coating Products",
+      "Professional Application Process",
+      "Long Lasting Protection",
+      "Experienced Car Care Professionals",
+      "Advanced Underbody Cleaning",
+      "Attention to Detail",
+      "Premium Service Standards",
+    ],
+    vehicles: ["Luxury Cars", "SUVs", "Daily Driven Vehicles", "Commercial Vehicles", "Premium Bikes"],
+    whatIs: {
+      heading: "What is Anti Rust Coating?",
+      body: "Anti rust coating is a protective treatment applied to the vehicle's underbody and vulnerable metal surfaces to help prevent rust formation, corrosion, moisture damage, mud and dirt build-up, and metal surface deterioration. The coating creates a protective barrier that helps shield the vehicle from harsh environmental exposure.",
+    },
+    finishes: [
+      { name: "Underbody Protection Services", desc: "Your car's underbody faces constant exposure to water, mud, dirt, road debris, moisture, and harsh weather conditions. Our underbody coating process helps create a durable protective layer against these damaging elements." },
+      { name: "Anti Corrosion Treatment for Cars", desc: "Rust and corrosion can affect chassis components, metal surfaces, suspension areas, wheel arches, and underbody panels. Our anti-corrosion coating helps reduce long-term surface deterioration and rust development." },
+    ],
+    coverage: {
+      heading: "Our Anti Rust Coating Process",
+      items: [
+        "Underbody Inspection",
+        "Deep Cleaning & Surface Preparation",
+        "Mud & Dirt Removal",
+        "Surface Drying",
+        "Anti Rust Coating Application",
+        "Protective Layer Finishing",
+        "Final Quality Inspection",
+      ],
+    },
+    models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
+    maintenance: [
+      "Vehicle regularly exposed to water or mud",
+      "Frequent driving on rough roads",
+      "Visible rust spots underneath",
+      "Vehicle is several years old",
+      "Want long-term underbody protection",
+    ],
+    comparison: {
+      heading: "Why Anti Rust Treatment is Important",
+      intro: "Underbody protection is especially important for vehicles driven regularly in wet, muddy, or rough road conditions.",
+      items: [
+        "Increase Vehicle Lifespan",
+        "Reduce Corrosion Risks",
+        "Protect Underbody Components",
+        "Improve Long-Term Durability",
+        "Maintain Vehicle Condition",
+        "Enhance Resale Value",
+      ],
+    },
+    faqs: [
+      { q: "What does anti rust coating protect against?", a: "It helps protect against rust, corrosion, moisture damage, and underbody deterioration." },
+      { q: "Is underbody coating necessary for cars?", a: "Yes, underbody protection helps improve durability and reduce long-term rust risks." },
+      { q: "How long does anti rust coating last?", a: "Durability depends on driving conditions, environmental exposure, and maintenance." },
+      { q: "Can anti rust coating prevent corrosion?", a: "It helps reduce corrosion risks by creating a protective barrier over vulnerable surfaces." },
+      { q: "Do you provide anti rust coating for SUVs and luxury vehicles?", a: "Yes, CLNHYGEN provides underbody rust protection for all vehicle types including luxury SUVs and premium cars." },
+    ],
+  },
 };
 
 const allServices = [
@@ -970,6 +1048,7 @@ const allServices = [
   { name: "Car Rubbing & Polishing", to: "/services/car-rubbing-polishing" },
   { name: "Luxury Car Detailing", to: "/services/luxury-car-detailing" },
   { name: "Dent Paint & Body Shop", to: "/services/dent-paint" },
+  { name: "Anti Rust Coating", to: "/services/anti-rust-coating" },
 ];
 
 const Service = () => {
