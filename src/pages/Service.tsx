@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { CheckCircle2, ArrowRight, Phone, MessageCircle, MapPin, BadgeCheck, Sparkles } from "lucide-react";
+import { CheckCircle2, ArrowRight, Phone, MessageCircle, MapPin, BadgeCheck, Sparkles, Shield, Droplets } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import ceramic from "@/assets/service-ceramic.jpg";
 import ppf from "@/assets/service-ppf.jpg";
@@ -16,6 +16,12 @@ type ServiceData = {
   removes?: { heading: string; items: string[] };
   whyUs: string[];
   vehicles?: string[];
+  whatIs?: { heading: string; body: string };
+  finishes?: { name: string; desc: string }[];
+  coverage?: { heading: string; items: string[] };
+  models?: string[];
+  maintenance?: string[];
+  comparison?: { heading: string; intro: string; items: string[] };
 };
 
 const data: Record<string, ServiceData> = {
@@ -25,27 +31,70 @@ const data: Record<string, ServiceData> = {
     subtitle: "Premium PPF that protects your vehicle's original paint from scratches, stone chips, road debris, swirl marks and UV damage.",
     img: ppf,
     intro:
-      "Our Paint Protection Film (PPF) services in Meerut help protect your vehicle's original paint from scratches, stone chips, road debris, swirl marks, and UV damage. We use premium-quality PPF materials and precision installation techniques to deliver seamless protection for luxury cars, SUVs, and daily-driven vehicles.",
+      "Welcome to CLNHYGEN — your trusted destination for premium Paint Protection Film (PPF) installation in Meerut. We provide high-quality PPF solutions designed to protect your car's original paint from scratches, stone chips, swirl marks, road debris, and UV damage while maintaining a flawless showroom finish. Whether you own a Fortuner, Thar, Scorpio N, BMW, Mercedes, Audi, Safari, Creta or any luxury or daily-driven vehicle — our expert team ensures precision protection with premium finishing.",
     benefits: [
       "Self-Healing Technology",
-      "High Gloss Finish",
-      "Scratch Resistance",
-      "UV Protection",
       "Hydrophobic Surface",
-      "Non-Yellowing Film",
+      "High Gloss Finish",
+      "Matte Finish Options",
+      "Non-Yellowing Material",
+      "UV Resistant Protection",
+      "Scratch Resistance",
       "Long-Term Paint Protection",
+      "Enhanced Resale Value",
     ],
     removes: {
       heading: "PPF Protects Against",
-      items: ["Stone Chips", "Minor Scratches", "Swirl Marks", "UV Damage", "Paint Fading", "Road Debris Damage"],
+      items: ["Stone Chips", "Minor Scratches", "Road Debris", "Swirl Marks", "Bird Droppings", "UV Damage", "Paint Fading", "Hard Water Spots"],
     },
     whyUs: [
-      "Expert PPF Installation Team",
+      "Experienced PPF Installation Experts",
+      "Computer Precision Cutting",
       "Bubble-Free Finish",
-      "Edge-to-Edge Coverage",
+      "Seamless Edge Finishing",
       "Premium Imported Films",
+      "Dust-Controlled Installation Environment",
       "Long Lasting Protection",
     ],
+    whatIs: {
+      heading: "What is Paint Protection Film (PPF)?",
+      body: "Paint Protection Film (PPF) is a transparent polyurethane film applied over your vehicle's painted surfaces to protect them from external damage. It acts as a strong protective layer while preserving your car's original paint quality and shine — one of the best long-term investments for maintaining your vehicle's appearance and resale value.",
+    },
+    finishes: [
+      { name: "Gloss PPF", desc: "Enhances your vehicle's shine with a deep glossy finish while providing maximum paint protection." },
+      { name: "Matte PPF", desc: "Transforms your vehicle with a premium satin matte appearance while protecting the original paint underneath." },
+    ],
+    coverage: {
+      heading: "Full Body & Partial PPF Coverage",
+      items: [
+        "Full Body PPF",
+        "Front Bumper PPF",
+        "Hood Protection Film",
+        "Door Edge Protection",
+        "Headlight PPF",
+        "Side Mirror PPF",
+        "Piano Black Interior PPF",
+      ],
+    },
+    models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Mercedes-Benz", "Audi", "Defender", "Safari", "Creta", "Verna"],
+    maintenance: [
+      "Avoid harsh chemicals",
+      "Use pH-neutral car shampoo",
+      "Wash with microfiber cloths",
+      "Avoid pressure washing edges closely",
+      "Get regular detailing maintenance",
+    ],
+    comparison: {
+      heading: "Why PPF is Better than Wax or Polish",
+      intro: "Unlike traditional wax or polishing methods, Paint Protection Film provides physical impact resistance and long-term paint safety.",
+      items: [
+        "Better Scratch Protection",
+        "Long-Term Durability",
+        "UV & Chemical Resistance",
+        "Better Resale Value",
+        "Permanent Surface Protection",
+      ],
+    },
   },
   "ceramic-coating": {
     eyebrow: "Long Lasting Shine & Protection",
@@ -197,6 +246,63 @@ const Service = () => {
         </section>
       )}
 
+      {/* WHAT IS */}
+      {s.whatIs && (
+        <section className="py-20">
+          <div className="container mx-auto max-w-3xl text-center">
+            <h3 className="font-display text-3xl md:text-4xl">{s.whatIs.heading}</h3>
+            <div className="mt-5 h-px w-20 gold-divider mx-auto" />
+            <p className="mt-6 text-muted-foreground leading-relaxed">{s.whatIs.body}</p>
+          </div>
+        </section>
+      )}
+
+      {/* FINISHES (Gloss vs Matte) */}
+      {s.finishes && (
+        <section className="py-16 border-y border-border bg-secondary/20">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Finish Options</p>
+              <h3 className="font-display text-3xl md:text-4xl">Gloss & Matte PPF Installation</h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {s.finishes.map((f) => (
+                <div key={f.name} className="rounded-2xl border border-border bg-card p-8 hover:border-gold transition-smooth">
+                  <div className="h-12 w-12 grid place-items-center rounded-full bg-gold/10 mb-5">
+                    <Droplets className="h-6 w-6 text-gold" />
+                  </div>
+                  <h4 className="font-display text-2xl">{f.name}</h4>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* COVERAGE */}
+      {s.coverage && (
+        <section className="py-20">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Coverage Options</p>
+              <h3 className="font-display text-3xl md:text-4xl">{s.coverage.heading}</h3>
+              <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+                Customized PPF packages based on your protection needs and budget.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {s.coverage.items.map((c) => (
+                <div key={c} className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-4 hover:border-gold transition-smooth">
+                  <Shield className="h-4 w-4 text-gold shrink-0" />
+                  <span className="text-sm">{c}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* WHY CHOOSE CLNHYGEN */}
       <section className="py-20">
         <div className="container mx-auto max-w-5xl">
@@ -228,8 +334,49 @@ const Service = () => {
               </div>
             </div>
           )}
+
+          {s.models && (
+            <div className="mt-10 rounded-2xl border border-border bg-card p-8 text-center">
+              <h4 className="font-display text-2xl">Popular Models We Specialize In</h4>
+              <div className="mt-5 flex flex-wrap justify-center gap-2.5">
+                {s.models.map((m) => (
+                  <span key={m} className="px-4 py-1.5 rounded-full bg-gold/10 text-foreground text-sm border border-gold/30">{m}</span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
+
+      {/* MAINTENANCE + COMPARISON */}
+      {(s.maintenance || s.comparison) && (
+        <section className="py-20 border-y border-border bg-secondary/20">
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-8">
+            {s.maintenance && (
+              <div className="rounded-2xl border border-border bg-card p-8">
+                <h4 className="font-display text-2xl mb-2">Maintenance Tips</h4>
+                <p className="text-sm text-muted-foreground mb-5">Keep your PPF looking new for years with simple care.</p>
+                <ul className="space-y-3 text-sm">
+                  {s.maintenance.map((m) => (
+                    <li key={m} className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-gold mt-0.5 shrink-0" />{m}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {s.comparison && (
+              <div className="rounded-2xl border border-border bg-card p-8">
+                <h4 className="font-display text-2xl mb-2">{s.comparison.heading}</h4>
+                <p className="text-sm text-muted-foreground mb-5">{s.comparison.intro}</p>
+                <ul className="space-y-3 text-sm">
+                  {s.comparison.items.map((c) => (
+                    <li key={c} className="flex items-start gap-2"><BadgeCheck className="h-4 w-4 text-gold mt-0.5 shrink-0" />{c}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* ALL SERVICES */}
       <section className="py-20 border-y border-border bg-secondary/20">
