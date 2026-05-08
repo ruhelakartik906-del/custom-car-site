@@ -8,7 +8,7 @@ import ppf from "@/assets/service-ppf.jpg";
 const slides = [
   {
     img: heroCar,
-    eyebrow: "Pune's Premier Detail Studio",
+    eyebrow: "Meerut's Premier Detail Studio",
     title: "LIQUID GLASS.",
     titleAccent: "ENDLESS REFLECTION.",
     desc: "Museum-grade ceramic coatings in a dust-controlled studio.",

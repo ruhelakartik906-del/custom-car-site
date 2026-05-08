@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gradient-gold">
               <Sparkles className="h-5 w-5 text-primary-foreground" />
             </div>
-            <div className="font-display text-2xl">Auro<span className="text-gold">.</span></div>
+            <div className="font-display text-2xl">CLN<span className="text-gold">HYGEN</span></div>
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Crafting mirror-perfect finishes for India's most loved SUVs since 2015.
+            Premium car detailing studio in Meerut — PPF, ceramic coating, paint correction & luxury car care.
           </p>
           <div className="flex gap-3 mt-5">
             {[Instagram, Facebook, Youtube].map((Icon, i) => (
@@ -48,16 +48,16 @@ const Footer = () => {
         <div>
           <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-4">Visit Studio</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex gap-3"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Plot 24, Industrial Area Phase II, Pune 411019</li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /> +91 98765 43210</li>
-            <li className="flex gap-3"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> hello@aurodetail.in</li>
+            <li className="flex gap-3"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Mohkampur Industrial Area, Meerut, Uttar Pradesh</li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /> +91 84499 00095</li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> hello@clnhygen.com</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border/60">
         <div className="container mx-auto py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Auro Detail Studio. All rights reserved.</p>
-          <p>Crafted with precision in Pune, India.</p>
+          <p>© {new Date().getFullYear()} CLNHYGEN. All rights reserved.</p>
+          <p>Crafted with precision in Meerut, India.</p>
         </div>
       </div>
     </footer>

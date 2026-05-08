@@ -41,8 +41,8 @@ const Header = () => {
               <Sparkles className="h-5 w-5 text-primary-foreground" />
             </div>
             <div className="leading-tight">
-              <div className="font-display text-2xl text-foreground">Auro<span className="text-gold">.</span></div>
-              <div className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Detail Studio</div>
+              <div className="font-display text-2xl text-foreground">CLN<span className="text-gold">HYGEN</span></div>
+              <div className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Detail Studio · Meerut</div>
             </div>
           </Link>
 
@@ -67,7 +67,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-3 shrink-0">
             <button className="flex items-center gap-2 px-4 h-10 rounded-full border border-border hover:border-gold transition-smooth text-sm">
               <MapPin className="h-4 w-4 text-gold" />
-              <span>Pune</span>
+              <span>Meerut</span>
               <ChevronDown className="h-3.5 w-3.5" />
             </button>
             <button aria-label="Account" className="h-10 w-10 grid place-items-center rounded-full border border-border hover:border-gold hover:text-gold transition-smooth">
