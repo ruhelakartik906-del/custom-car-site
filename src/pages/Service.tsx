@@ -1032,6 +1032,81 @@ const data: Record<string, ServiceData> = {
       { q: "Do you provide anti rust coating for SUVs and luxury vehicles?", a: "Yes, CLNHYGEN provides underbody rust protection for all vehicle types including luxury SUVs and premium cars." },
     ],
   },
+  "alloy-wheel-detailing": {
+    eyebrow: "Premium Wheel Cleaning & Protection",
+    title: "Alloy Wheel Detailing in Meerut",
+    subtitle: "Deep alloy cleaning, brake dust removal, wheel polishing, tire dressing, and premium wheel protection for a luxury appearance.",
+    img: detailing,
+    intro:
+      "Welcome to CLNHYGEN — your trusted destination for premium alloy wheel detailing services in Meerut. We specialize in deep alloy cleaning, brake dust removal, wheel polishing, tire dressing, and premium wheel protection solutions designed to restore shine and maintain a clean, luxury appearance for your vehicle. Alloy wheels constantly face exposure to brake dust, mud, road grime, dirt, water, and harsh environmental conditions that affect their appearance over time. Our professional wheel detailing process safely cleans and enhances your alloys with precision and care.",
+    benefits: [
+      "Removes Brake Dust Build-Up",
+      "Restores Wheel Shine",
+      "Improves Vehicle Appearance",
+      "Protects Wheel Surfaces",
+      "Enhances Premium Look",
+      "Maintains Clean Finish",
+      "Improves Overall Detailing Quality",
+    ],
+    removes: {
+      heading: "Deep Alloy Cleaning Removes",
+      items: ["Brake Dust", "Mud & Dirt", "Grease Residue", "Road Contamination", "Water Spots", "Surface Build-Up"],
+    },
+    whyUs: [
+      "Specialized Alloy Cleaning Products",
+      "Professional Detailing Equipment",
+      "Safe Wheel Cleaning Methods",
+      "Premium Finishing Standards",
+      "Attention to Detail",
+      "Experienced Detailing Professionals",
+      "Luxury Vehicle Care Experience",
+    ],
+    vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
+    whatIs: {
+      heading: "What is Alloy Wheel Detailing?",
+      body: "Alloy wheel detailing is a professional cleaning and restoration process focused on removing brake dust, dirt, grease, oxidation, and road contamination from alloy wheels while restoring gloss and premium finish. Unlike normal washing methods, professional detailing uses specialized wheel-safe products and techniques to protect wheel surfaces and improve appearance.",
+    },
+    finishes: [
+      { name: "Alloy Wheel Polishing Services", desc: "Our wheel polishing process enhances alloy wheel shine, surface smoothness, reflection, and premium appearance using professional polishing techniques and premium products for a clean showroom-level finish." },
+      { name: "Tire Dressing & Finishing", desc: "Our detailing service includes tire dressing to restore deep black finish, clean tire appearance, and a premium exterior look — helping your vehicle achieve a more refined and luxury appearance." },
+    ],
+    coverage: {
+      heading: "Signs Your Wheels Need Professional Detailing",
+      items: [
+        "Wheels look dull or dirty",
+        "Brake dust is heavily visible",
+        "Alloy shine has faded",
+        "Wheels are difficult to clean",
+        "Tire finish appears dry",
+      ],
+    },
+    models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
+    maintenance: [
+      "Reduce Dirt Adhesion",
+      "Improve Cleaning Ease",
+      "Maintain Surface Finish",
+      "Enhance Wheel Appearance",
+      "Schedule regular wheel detailing",
+    ],
+    comparison: {
+      heading: "Why Regular Alloy Wheel Cleaning Matters",
+      intro: "Clean alloy wheels improve the complete look of your vehicle and help maintain long-term wheel condition.",
+      items: [
+        "Prevent Brake Dust Build-Up",
+        "Maintain Premium Appearance",
+        "Protect Wheel Surfaces",
+        "Improve Vehicle Aesthetics",
+        "Enhance Overall Detailing Finish",
+      ],
+    },
+    faqs: [
+      { q: "What is included in alloy wheel detailing?", a: "Alloy wheel detailing includes deep cleaning, brake dust removal, wheel polishing, tire dressing, and surface finishing." },
+      { q: "Can wheel detailing remove brake dust?", a: "Yes, professional detailing safely removes heavy brake dust and road contamination." },
+      { q: "Is wheel polishing safe for alloy wheels?", a: "Yes, professional polishing methods safely restore gloss and improve wheel appearance." },
+      { q: "How often should alloy wheels be detailed?", a: "Regular detailing helps maintain cleanliness, shine, and wheel condition." },
+      { q: "Do you detail luxury vehicle wheels?", a: "Yes, CLNHYGEN provides premium alloy wheel detailing services for luxury and premium vehicles." },
+    ],
+  },
 };
 
 const allServices = [
@@ -1044,7 +1119,7 @@ const allServices = [
   { name: "Car Spa & Foam Wash", to: "/services/car-spa" },
   { name: "Headlight Restoration", to: "/services/headlight-restoration" },
   { name: "Engine Bay Cleaning", to: "/services/engine-bay-detailing" },
-  { name: "Alloy Wheel Detailing", to: "/services/car-detailing" },
+  { name: "Alloy Wheel Detailing", to: "/services/alloy-wheel-detailing" },
   { name: "Car Rubbing & Polishing", to: "/services/car-rubbing-polishing" },
   { name: "Luxury Car Detailing", to: "/services/luxury-car-detailing" },
   { name: "Dent Paint & Body Shop", to: "/services/dent-paint" },

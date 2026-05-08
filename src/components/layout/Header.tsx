@@ -19,6 +19,7 @@ const services = [
   { label: "Headlight Restoration", to: "/services/headlight-restoration" },
   { label: "Engine Bay Detailing", to: "/services/engine-bay-detailing" },
   { label: "Anti Rust Coating", to: "/services/anti-rust-coating" },
+  { label: "Alloy Wheel Detailing", to: "/services/alloy-wheel-detailing" },
 ];
 
 const vehicles = [
