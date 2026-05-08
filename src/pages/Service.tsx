@@ -267,12 +267,10 @@ const data: Record<string, ServiceData> = {
       "Dashboard Polishing",
       "Steam Sanitization",
       "Odor Removal",
-      "Carpet & Floor Cleaning",
-      "Interior Surface Protection",
     ],
     removes: {
       heading: "Exterior Detailing Includes",
-      items: ["Foam Wash", "Clay Bar Treatment", "Wax & Sealant Protection", "Alloy Wheel Cleaning", "Tire Dressing", "Plastic Trim Restoration", "Water Spot Removal"],
+      items: ["Foam Wash", "Clay Bar Treatment", "Wax & Sealant Protection", "Alloy Wheel Cleaning", "Tire Dressing", "Plastic Trim Restoration"],
     },
     whyUs: [
       "Removes Dust & Bacteria",
