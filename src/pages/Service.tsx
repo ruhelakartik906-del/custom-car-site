@@ -178,7 +178,6 @@ const data: Record<string, ServiceData> = {
       { q: "Do I need paint correction before coating?", a: "Yes — paint correction removes swirl marks and imperfections so the coating bonds to a flawless surface for the best gloss and durability." },
     ],
   },
-  },
   "paint-correction": {
     eyebrow: "Professional Rubbing & Polishing",
     title: "Paint Correction Services in Meerut",
