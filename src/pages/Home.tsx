@@ -364,6 +364,85 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* SEO CONTENT — CLNHYGEN MEERUT */}
+      <section className="py-24 bg-secondary/20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-14">
+            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">CLNHYGEN · Meerut</p>
+            <h2 className="font-display text-4xl md:text-5xl">Premium Car Detailing in Meerut</h2>
+            <div className="mt-6 h-px w-20 gold-divider mx-auto" />
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              Welcome to <strong className="text-foreground">CLNHYGEN</strong> — the trusted destination for premium
+              car detailing in Meerut. We specialize in Paint Protection Film (PPF), ceramic coating, paint correction,
+              interior detailing, and luxury car care designed to keep your vehicle protected, glossy and showroom-ready.
+              From a Fortuner, Thar or Scorpio-N to BMW, Mercedes and Audi — our team delivers unmatched finishing and deep protection.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4 mb-16">
+            {[
+              "Paint Protection Film (PPF)",
+              "Ceramic Coating",
+              "Graphene Coating",
+              "Car Paint Correction",
+              "Interior Deep Cleaning",
+              "Exterior Car Detailing",
+              "Car Rubbing & Polishing",
+              "Headlight Restoration",
+              "Alloy Wheel Detailing",
+              "Car Spa & Foam Wash",
+              "Engine Bay Cleaning",
+              "Dent Paint & Body Shop",
+            ].map((s) => (
+              <div key={s} className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-4 hover:border-gold transition-smooth">
+                <CheckCircle2 className="h-4 w-4 text-gold shrink-0" />
+                <span className="text-sm">{s}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="rounded-2xl border border-border bg-card p-8">
+              <h3 className="font-display text-2xl mb-4">Paint Protection Film (PPF) in Meerut</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                Protect your car's original paint from stone chips, scratches, swirl marks, UV damage and road debris with our premium PPF.
+              </p>
+              <ul className="space-y-2 text-sm">
+                {["Self-Healing Technology", "High-Gloss Finish", "Hydrophobic Surface", "Non-Yellowing Material", "Long-Term Paint Protection", "Enhanced Resale Value"].map((b) => (
+                  <li key={b} className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold shrink-0" />{b}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-8">
+              <h3 className="font-display text-2xl mb-4">Ceramic Coating in Meerut</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                A nano-protective layer that delivers superior gloss, water repellency and protection against dirt, UV rays and contamination.
+              </p>
+              <ul className="space-y-2 text-sm">
+                {["Deep Mirror Gloss Finish", "Hydrophobic Water Beading", "UV & Oxidation Protection", "Easier Vehicle Cleaning", "Enhanced Paint Depth", "Long-Lasting Surface Protection"].map((b) => (
+                  <li key={b} className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold shrink-0" />{b}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 rounded-2xl bg-gradient-to-br from-card to-secondary/40 border border-border p-10 text-center">
+            <h3 className="font-display text-2xl md:text-3xl">Book Premium Car Detailing in Meerut</h3>
+            <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
+              Mohkampur Industrial Area, Meerut, Uttar Pradesh · +91 84499 00095
+            </p>
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="tel:+918449900095" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-colors">
+                <Phone className="h-4 w-4" /> Call +91 84499 00095
+              </a>
+              <a href="https://wa.me/918449900095" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-colors">
+                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
