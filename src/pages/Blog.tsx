@@ -40,16 +40,6 @@ const commonServices = (city: string): Section[] => [
       "Odor removal",
     ],
   },
-  {
-    title: "Exterior Car Detailing",
-    items: [
-      "Foam wash",
-      "Machine polishing",
-      "Scratch removal",
-      "Wax coating",
-      "Tire dressing",
-    ],
-  },
 ];
 
 const posts: Post[] = [
@@ -234,7 +224,7 @@ const Blog = () => (
             <h3 className="font-display text-3xl flex items-center gap-3">
               <Gem className="h-6 w-6 text-gold" /> Premium Car Detailing Services in {p.city}
             </h3>
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
               {p.services.map((s) => (
                 <div key={s.title} className="bg-card border border-border p-6 rounded-sm">
                   <h4 className="font-display text-xl">{s.title}</h4>

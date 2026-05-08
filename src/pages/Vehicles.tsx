@@ -159,7 +159,6 @@ const whyChoose = [
   "Luxury Finishing Standards",
   "Safe Detailing Techniques",
   "Customized Vehicle Care Packages",
-  "Attention to Detail",
 ];
 
 const faqs = [

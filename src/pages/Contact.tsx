@@ -9,9 +9,7 @@ const services = [
   "Paint Protection Film (PPF)",
   "Car Detailing",
   "Interior Cleaning",
-  "Car Polishing",
   "Paint Correction",
-  "Foam Wash",
   "Deep Cleaning Services",
 ];
 
@@ -143,7 +141,7 @@ const Contact = () => {
             <h2 className="font-display text-4xl">Complete Premium Car Care</h2>
             <div className="mt-4 h-px w-20 gold-divider mx-auto" />
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((s) => (
               <div key={s} className="bg-card border border-border p-5 rounded-sm flex items-center gap-3">
                 <Gem className="h-5 w-5 text-gold shrink-0" />

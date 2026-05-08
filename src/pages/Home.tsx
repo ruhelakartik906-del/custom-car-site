@@ -46,7 +46,6 @@ const services = [
   { title: "Paint Correction", desc: "Multi-stage compounding to remove swirls, holograms and oxidation.", img: paint, to: "/services/paint-correction", Icon: Award },
   { title: "Interior Detailing", desc: "Steam sanitization, leather conditioning and deep cabin restoration.", img: detailing, to: "/services/interior-detailing", Icon: Droplets },
   { title: "Alloy Wheel Detailing", desc: "Brake-dust removal, polishing and premium wheel protection.", img: paint, to: "/services/alloy-wheel-detailing", Icon: Disc3 },
-  { title: "Engine Bay Cleaning", desc: "Safe degreasing, dressing and full engine-bay restoration.", img: detailing, to: "/services/engine-bay-cleaning", Icon: Cog },
 ];
 
 const ppfPrevents = ["Stone Chips", "Minor Scratches", "Swirl Marks", "UV Damage", "Paint Fading", "Road Debris Damage"];
@@ -60,6 +59,8 @@ const whyUs = [
   { Icon: Users, t: "Skilled Professionals", d: "Trained detailing experts who handle every vehicle with precision and care." },
   { Icon: Award, t: "Luxury Car Care Experience", d: "From hatchbacks to luxury SUVs and sports cars — premium service for every car." },
   { Icon: Heart, t: "Customer Satisfaction Focused", d: "Quality workmanship, long-lasting protection and exceptional customer experience." },
+  { Icon: Shield, t: "Advanced Protection", d: "Industry-leading PPF, ceramic and graphene solutions for maximum defence." },
+  { Icon: Sparkles, t: "Showroom Finish", d: "Meticulous attention to detail that delivers mirror-like gloss every time." },
 ];
 
 const Bullet = ({ children }: { children: React.ReactNode }) => (
@@ -264,7 +265,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((f) => (
               <div key={f.t} className="group rounded-2xl border border-border bg-card p-8 text-center hover:border-gold hover:-translate-y-1 transition-all">
                 <div className="mx-auto h-14 w-14 grid place-items-center rounded-full bg-gradient-gold mb-5">

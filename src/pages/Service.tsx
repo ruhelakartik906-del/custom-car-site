@@ -46,7 +46,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "PPF Protects Against",
-      items: ["Stone Chips", "Minor Scratches", "Road Debris", "Swirl Marks", "Bird Droppings", "UV Damage", "Paint Fading", "Hard Water Spots"],
+      items: ["Stone Chips", "Minor Scratches", "Road Debris", "Swirl Marks", "Bird Droppings", "UV Damage"],
     },
     whyUs: [
       "Experienced PPF Installation Experts",
@@ -55,7 +55,6 @@ const data: Record<string, ServiceData> = {
       "Seamless Edge Finishing",
       "Premium Imported Films",
       "Dust-Controlled Installation Environment",
-      "Long Lasting Protection",
     ],
     whatIs: {
       heading: "What is Paint Protection Film (PPF)?",
@@ -74,7 +73,6 @@ const data: Record<string, ServiceData> = {
         "Door Edge Protection",
         "Headlight PPF",
         "Side Mirror PPF",
-        "Piano Black Interior PPF",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Mercedes-Benz", "Audi", "Defender", "Safari", "Creta", "Verna"],
@@ -122,7 +120,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Ceramic Coating Protects Against",
-      items: ["UV Rays", "Paint Oxidation", "Dirt & Dust", "Water Spots", "Bird Droppings", "Chemical Contaminants", "Minor Surface Damage"],
+      items: ["UV Rays", "Paint Oxidation", "Dirt & Dust", "Water Spots", "Bird Droppings", "Chemical Contaminants"],
     },
     whyUs: [
       "Premium Quality Coating Products",
@@ -149,6 +147,7 @@ const data: Record<string, ServiceData> = {
         "Clay Bar Treatment",
         "Paint Correction & Polishing",
         "Removal of Swirl Marks & Imperfections",
+        "Paint Surface Inspection Before Coating",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Creta", "Verna", "Safari"],
@@ -196,7 +195,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Common Paint Problems We Fix",
-      items: ["Swirl Marks", "Minor Scratches", "Holograms", "Water Spots", "Paint Oxidation", "Surface Dullness", "Improper Wash Marks", "Light Paint Defects"],
+      items: ["Swirl Marks", "Minor Scratches", "Holograms", "Water Spots", "Paint Oxidation", "Surface Dullness"],
     },
     whyUs: [
       "Experienced Detailing Specialists",
@@ -220,8 +219,6 @@ const data: Record<string, ServiceData> = {
         "Paint Inspection Under Proper Lighting",
         "Compounding Stage",
         "Polishing Stage",
-        "Finishing Refinement",
-        "Paint Protection Application",
       ],
     },
     finishes: [
@@ -270,12 +267,10 @@ const data: Record<string, ServiceData> = {
       "Dashboard Polishing",
       "Steam Sanitization",
       "Odor Removal",
-      "Carpet & Floor Cleaning",
-      "Interior Surface Protection",
     ],
     removes: {
       heading: "Exterior Detailing Includes",
-      items: ["Foam Wash", "Clay Bar Treatment", "Wax & Sealant Protection", "Alloy Wheel Cleaning", "Tire Dressing", "Plastic Trim Restoration", "Water Spot Removal"],
+      items: ["Foam Wash", "Clay Bar Treatment", "Wax & Sealant Protection", "Alloy Wheel Cleaning", "Tire Dressing", "Plastic Trim Restoration"],
     },
     whyUs: [
       "Removes Dust & Bacteria",
@@ -283,6 +278,7 @@ const data: Record<string, ServiceData> = {
       "Improves Cabin Hygiene",
       "Restores Premium Interior Feel",
       "Protects Interior Surfaces",
+      "Restores Fresh Cabin Feel",
     ],
   },
   "exterior-detailing": {
@@ -314,8 +310,6 @@ const data: Record<string, ServiceData> = {
         "Wax & Sealant Protection",
         "Tire Dressing",
         "Alloy Wheel Cleaning",
-        "Exterior Plastic Restoration",
-        "Glass Cleaning & Treatment",
       ],
     },
     whyUs: [
@@ -482,7 +476,6 @@ const data: Record<string, ServiceData> = {
         "Door Dent Repair",
         "Accident Damage Repair",
         "Body Panel Alignment",
-        "Surface Refinishing",
       ],
     },
     whyUs: [
@@ -510,6 +503,7 @@ const data: Record<string, ServiceData> = {
         "Minor Paint Damage",
         "Swirl Marks",
         "Clear Coat Imperfections",
+        "Panel Paint Matching",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -565,7 +559,6 @@ const data: Record<string, ServiceData> = {
         "Surface Scratches",
         "Hazy Headlights",
         "Dull Finish",
-        "UV Damage Effects",
       ],
     },
     whyUs: [
@@ -593,6 +586,7 @@ const data: Record<string, ServiceData> = {
         "Oxidation or Haze",
         "Poor Night Visibility",
         "Dull or Scratched Lens",
+        "Headlight Clarity Check",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -647,8 +641,6 @@ const data: Record<string, ServiceData> = {
         "Plastic Trim Cleaning",
         "Surface Dressing",
         "Rubber Component Cleaning",
-        "Engine Compartment Drying",
-        "Final Finishing Inspection",
       ],
     },
     whyUs: [
@@ -658,7 +650,6 @@ const data: Record<string, ServiceData> = {
       "Attention to Detail",
       "Luxury Finishing Standards",
       "Proper Component Protection",
-      "Professional Engine Bay Restoration",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -678,7 +669,6 @@ const data: Record<string, ServiceData> = {
         "Soft Brush Cleaning",
         "Safe Surface Rinsing",
         "Air Drying & Moisture Removal",
-        "Dressing & Finishing",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -807,7 +797,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Paint Problems We Help Improve",
-      items: ["Paint Dullness", "Light Swirl Marks", "Minor Surface Defects", "Oxidation Effects", "Water Spot Marks", "Improper Wash Marks", "Faded Paint Appearance"],
+      items: ["Paint Dullness", "Light Swirl Marks", "Minor Surface Defects", "Oxidation Effects", "Water Spot Marks", "Improper Wash Marks"],
     },
     whyUs: [
       "Skilled Detailing Experts",
@@ -816,7 +806,6 @@ const data: Record<string, ServiceData> = {
       "Safe Paint Enhancement Techniques",
       "Luxury Finishing Standards",
       "Attention to Detail",
-      "Professional Paint Care Solutions",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -834,9 +823,7 @@ const data: Record<string, ServiceData> = {
         "Paint Surface Inspection",
         "Surface Decontamination",
         "Clay Bar Treatment",
-        "Machine Rubbing Process",
         "Multi-Stage Polishing",
-        "Gloss Enhancement",
         "Paint Protection Finishing",
       ],
     },
@@ -904,7 +891,6 @@ const data: Record<string, ServiceData> = {
       "Luxury Finishing Standards",
       "Attention to Detail",
       "Professional Detailing Equipment",
-      "Customized Car Care Solutions",
     ],
     vehicles: ["Luxury Sedans", "Premium SUVs", "Sports Cars", "Exotic Vehicles", "Performance Cars"],
     whatIs: {
@@ -972,7 +958,7 @@ const data: Record<string, ServiceData> = {
     ],
     removes: {
       heading: "Anti Rust Coating Protects Against",
-      items: ["Rust Formation", "Corrosion", "Moisture Damage", "Mud & Dirt Build-Up", "Metal Surface Deterioration", "Water Exposure", "Road Debris Damage"],
+      items: ["Rust Formation", "Corrosion", "Moisture Damage", "Mud & Dirt Build-Up", "Metal Surface Deterioration", "Water Exposure"],
     },
     whyUs: [
       "Premium Anti Rust Coating Products",
@@ -981,7 +967,6 @@ const data: Record<string, ServiceData> = {
       "Experienced Car Care Professionals",
       "Advanced Underbody Cleaning",
       "Attention to Detail",
-      "Premium Service Standards",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Daily Driven Vehicles", "Commercial Vehicles", "Premium Bikes"],
     whatIs: {
@@ -1001,7 +986,6 @@ const data: Record<string, ServiceData> = {
         "Surface Drying",
         "Anti Rust Coating Application",
         "Protective Layer Finishing",
-        "Final Quality Inspection",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -1059,7 +1043,6 @@ const data: Record<string, ServiceData> = {
       "Premium Finishing Standards",
       "Attention to Detail",
       "Experienced Detailing Professionals",
-      "Luxury Vehicle Care Experience",
     ],
     vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
     whatIs: {
@@ -1078,6 +1061,7 @@ const data: Record<string, ServiceData> = {
         "Alloy shine has faded",
         "Wheels are difficult to clean",
         "Tire finish appears dry",
+        "Wheel Surface Inspection",
       ],
     },
     models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
@@ -1124,6 +1108,7 @@ const allServices = [
   { name: "Luxury Car Detailing", to: "/services/luxury-car-detailing" },
   { name: "Dent Paint & Body Shop", to: "/services/dent-paint" },
   { name: "Anti Rust Coating", to: "/services/anti-rust-coating" },
+  { name: "Windshield Protection Film", to: "/services/windshield-protection" },
 ];
 
 const Service = () => {

@@ -265,12 +265,14 @@ const About = () => (
             Our detailing philosophy — every vehicle leaving our studio reflects our commitment to excellence.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { i: Sparkles, t: "Precision", d: "Calibrated processes, consistent results, every single time." },
             { i: ShieldCheck, t: "Protection", d: "Advanced PPF, ceramic and graphene systems that truly defend your paint." },
             { i: Award, t: "Perfection", d: "We'd rather book one car less than rush a finish." },
             { i: Wrench, t: "Passion for Automobiles", d: "Built by enthusiasts who treat your car as their own." },
+            { i: Gem, t: "Integrity", d: "Honest recommendations, transparent pricing, no upsells — ever." },
+            { i: Users, t: "Innovation", d: "Constantly upgrading techniques, tools and products to stay ahead." },
           ].map((v) => (
             <div key={v.t} className="bg-card border border-border p-7 rounded-sm">
               <v.i className="h-7 w-7 text-gold" />
