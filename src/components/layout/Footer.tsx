@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Instagram, Facebook, Youtube, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, Facebook, Youtube, MapPin, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,7 @@ const Footer = () => {
       <div className="container mx-auto py-16 grid gap-12 lg:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-2 mb-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gradient-gold">
-              <Sparkles className="h-5 w-5 text-primary-foreground" />
-            </div>
-            <div className="font-display text-2xl">CLN<span className="text-gold">HYGEN</span></div>
+            <img src={logo} alt="CLNHYGEN" className="h-14 w-auto object-contain" />
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Premium car detailing studio in Meerut — PPF, ceramic coating, paint correction & luxury car care.
