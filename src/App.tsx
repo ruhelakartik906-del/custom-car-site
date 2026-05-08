@@ -7,6 +7,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Service from "./pages/Service";
 import Vehicle from "./pages/Vehicle";
+import Vehicles from "./pages/Vehicles";
 import Pricing from "./pages/Pricing";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
@@ -26,6 +27,7 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/services/:slug" element={<Service />} />
+            <Route path="/vehicles" element={<Vehicles />} />
             <Route path="/vehicles/:slug" element={<Vehicle />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/gallery" element={<Gallery />} />

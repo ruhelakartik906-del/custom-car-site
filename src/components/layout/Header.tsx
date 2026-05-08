@@ -23,6 +23,7 @@ const services = [
 ];
 
 const vehicles = [
+  { label: "All Vehicles We Detail", to: "/vehicles", img: scorpioThumb, sub: "SUVs · Luxury · Sedans · EVs" },
   { label: "Mahindra Scorpio", to: "/vehicles/scorpio", img: scorpioThumb, sub: "Made for the Beast" },
   { label: "Toyota Fortuner", to: "/vehicles/fortuner", img: fortunerThumb, sub: "King of the Highway" },
 ];
