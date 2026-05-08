@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown, Sparkles, Search, MapPin, User } from "lucide-rea
 import { cn } from "@/lib/utils";
 import scorpioThumb from "@/assets/vehicle-scorpio.jpg";
 import fortunerThumb from "@/assets/vehicle-fortuner.jpg";
+import logo from "@/assets/logo.png";
 
 const services = [
   { label: "Ceramic Coating", to: "/services/ceramic-coating" },
@@ -48,13 +49,7 @@ const Header = () => {
         <div className="container mx-auto flex h-[70px] items-center gap-6">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group shrink-0">
-            <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gradient-gold shadow-gold">
-              <Sparkles className="h-5 w-5 text-primary-foreground" />
-            </div>
-            <div className="leading-tight">
-              <div className="font-display text-2xl text-foreground">CLN<span className="text-gold">HYGEN</span></div>
-              <div className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Detail Studio · Meerut</div>
-            </div>
+            <img src={logo} alt="CLNHYGEN" className="h-14 w-auto object-contain" />
           </Link>
 
           {/* Search bar */}
