@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto py-16 grid gap-12 lg:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="CLNHYGEN" className="h-20 w-auto object-contain" />
+            <img src={logo} alt="CLNHYGEN" className="h-28 w-auto object-contain" />
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Premium car detailing studio in Meerut — PPF, ceramic coating, paint correction & luxury car care.

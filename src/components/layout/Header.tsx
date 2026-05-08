@@ -49,7 +49,7 @@ const Header = () => {
         <div className="container mx-auto flex h-[70px] items-center gap-6">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group shrink-0">
-            <img src={logo} alt="CLNHYGEN" className="h-20 w-auto object-contain" />
+            <img src={logo} alt="CLNHYGEN" className="h-28 w-auto object-contain" />
           </Link>
 
           {/* Search bar */}
