@@ -451,11 +451,93 @@ const data: Record<string, ServiceData> = {
       ],
     },
     faqs: [
-      { q: "What is included in a car spa service?", a: "Snow foam wash, deep exterior cleaning, tire & alloy cleaning, interior vacuum, dashboard wipe, glass cleaning, microfiber drying, tire dressing and spray wax." },
-      { q: "How is foam wash better than a regular wash?", a: "Foam wash loosens dirt before contact, reducing swirl marks and protecting your paint, ceramic coating or PPF." },
-      { q: "Is car spa safe for ceramic coated cars?", a: "Yes — our pH-neutral foam and microfiber techniques are completely safe for ceramic coatings and PPF." },
-      { q: "How often should I get a car spa?", a: "Every 1–2 weeks for daily drivers and every 3–4 weeks for occasional-use vehicles is ideal for best paint condition." },
-      { q: "Do you also clean the interior in a car spa?", a: "Yes — basic interior vacuum, dashboard wipe and floor-mat cleaning are included. For deep interior, choose our Interior Detailing service." },
+      { q: "What is included in a car spa service?", a: "Car spa services include foam wash, exterior cleaning, tire cleaning, interior vacuuming, dashboard cleaning and shine enhancement." },
+      { q: "Is foam wash safe for car paint?", a: "Yes, foam wash safely loosens dirt and reduces the risk of scratches during washing." },
+      { q: "How often should I get a car spa done?", a: "Regular car spa services help maintain cleanliness, paint quality and overall vehicle appearance." },
+      { q: "Does foam wash damage ceramic coating or PPF?", a: "No, safe foam wash methods are suitable for vehicles with ceramic coating and Paint Protection Film." },
+      { q: "Why is professional car washing better?", a: "Professional car washing uses safe techniques, premium products and proper cleaning methods to protect paint and maintain finish quality." },
+    ],
+  },
+  "dent-paint": {
+    eyebrow: "Body Shop & Restoration",
+    title: "Dent Paint & Body Shop in Meerut",
+    subtitle: "Professional car dent repair, scratch removal, panel painting and full-body restoration with factory-finish quality.",
+    img: paint,
+    intro:
+      "Welcome to CLNHYGEN — your trusted destination for professional dent paint and body shop services in Meerut. We specialize in car dent repair, scratch removal, accidental damage repair, panel painting, full-body paint work and premium automotive restoration. Our team uses advanced repair techniques, precision paint matching and premium materials to deliver factory-finish results with long-lasting durability.",
+    benefits: [
+      "Restores Vehicle Appearance",
+      "Improves Paint Quality",
+      "Enhances Gloss & Finish",
+      "Increases Vehicle Value",
+      "Gives Fresh Factory-Like Look",
+      "Long-Lasting Durability",
+    ],
+    removes: {
+      heading: "Our Dent Repair Services Include",
+      items: [
+        "Minor Dent Removal",
+        "Panel Dent Repair",
+        "Bumper Repair",
+        "Door Dent Repair",
+        "Accident Damage Repair",
+        "Body Panel Alignment",
+        "Surface Refinishing",
+      ],
+    },
+    whyUs: [
+      "Experienced Denting & Painting Experts",
+      "Advanced Repair Techniques",
+      "Precision Paint Matching",
+      "Premium Paint Materials",
+      "Factory-Finish Standards",
+      "Luxury Vehicle Handling Experience",
+    ],
+    vehicles: ["Luxury Cars", "SUVs", "Sports Cars", "Daily Driven Vehicles", "Premium Bikes"],
+    whatIs: {
+      heading: "Professional Car Dent Repair & Painting",
+      body: "Minor dents, accidental damage, scratches and panel dents affect your vehicle's appearance and value. Our specialists restore damaged areas using professional repair techniques, precision paint matching and premium-quality materials — restoring factory-level body lines and a smooth surface finish.",
+    },
+    finishes: [
+      { name: "Car Painting Services", desc: "Full body paint, panel painting, scratch repair, bumper painting, touch-up work and clear coat refinishing using high-quality automotive paint systems." },
+      { name: "Accident Repair & Restoration", desc: "Damaged panel repair, bumper restoration, paint damage repair, surface refinishing and dent & scratch removal — restored with precision workmanship." },
+    ],
+    coverage: {
+      heading: "Scratch Removal & Surface Repair",
+      items: [
+        "Surface Scratches",
+        "Paint Scuffs",
+        "Minor Paint Damage",
+        "Swirl Marks",
+        "Clear Coat Imperfections",
+      ],
+    },
+    models: ["Thar", "Fortuner", "Scorpio N", "BMW", "Audi", "Mercedes-Benz", "Defender", "Safari", "Creta", "Verna"],
+    maintenance: [
+      "Wash regularly with pH-neutral shampoo",
+      "Avoid abrasive cloths and brushes",
+      "Protect freshly painted panels for the first few weeks",
+      "Apply ceramic coating or PPF after repaint",
+      "Schedule periodic inspections",
+    ],
+    comparison: {
+      heading: "Why Professional Dent Paint Matters",
+      intro: "Expert denting and painting deliver safer, cleaner and longer-lasting results compared to temporary fixes.",
+      items: [
+        "Restores Original Appearance",
+        "Protects Paint Quality",
+        "Prevents Rust Formation",
+        "Improves Vehicle Value",
+        "Maintains Premium Finish",
+        "Ensures Better Repair Durability",
+      ],
+    },
+    faqs: [
+      { q: "Do you provide insurance claim assistance?", a: "Yes — we assist with damage inspection, repair estimation, insurance coordination and professional repair execution for hassle-free service." },
+      { q: "How accurate is your paint matching?", a: "We use advanced paint-matching techniques for seamless blending with your vehicle's original color — for an invisible repair finish." },
+      { q: "Can you repair accident damage?", a: "Yes, our body shop handles damaged panel repair, bumper restoration, paint damage and complete surface refinishing." },
+      { q: "How long does a full-body paint job take?", a: "Timelines depend on vehicle size, condition and finish required. Our team shares a detailed estimate after inspection." },
+      { q: "Should I get ceramic coating after repaint?", a: "Yes — ceramic coating or PPF after repaint protects the new finish and extends gloss for years." },
     ],
   },
 };
@@ -472,7 +554,7 @@ const allServices = [
   { name: "Engine Bay Cleaning", to: "/services/car-detailing" },
   { name: "Alloy Wheel Detailing", to: "/services/car-detailing" },
   { name: "Car Rubbing & Polishing", to: "/services/paint-correction" },
-  { name: "Dent Paint & Body Shop", to: "/contact" },
+  { name: "Dent Paint & Body Shop", to: "/services/dent-paint" },
 ];
 
 const Service = () => {
