@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Sparkles, Search, MapPin, User } from "lucide-react";
 import { cn } from "@/lib/utils";
