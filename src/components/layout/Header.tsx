@@ -152,7 +152,7 @@ const Header = () => {
               </div>
             </div>
 
-            <NavLink to="/pricing" className={linkClass}>Pricing</NavLink>
+            <NavLink to="/products" className={linkClass}>Products</NavLink>
             <NavLink to="/gallery" className={linkClass}>Gallery</NavLink>
             <NavLink to="/about" className={linkClass}>About</NavLink>
             <NavLink to="/blog" className={linkClass}>Blog</NavLink>
@@ -169,7 +169,7 @@ const Header = () => {
               { to: "/", label: "Home" },
               ...services.map((s) => ({ to: s.to, label: `— ${s.label}` })),
               ...vehicles.map((v) => ({ to: v.to, label: `— ${v.label}` })),
-              { to: "/pricing", label: "Pricing" },
+              { to: "/products", label: "Products" },
               { to: "/gallery", label: "Gallery" },
               { to: "/about", label: "About" },
               { to: "/blog", label: "Blog" },
