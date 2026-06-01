@@ -33,6 +33,17 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     cn(
       "text-sm font-medium tracking-wide uppercase transition-smooth hover:text-gold",
