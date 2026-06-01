@@ -806,6 +806,7 @@ const Blog = () => {
             {current.slug === "what-is-paint-protection-film-ppf-worth-it-2026" && <PpfArticle />}
             {current.slug === "ppf-vs-ceramic-coating-which-is-better" && <PpfVsCeramicArticle />}
             {current.slug === "how-long-does-paint-protection-film-last" && <PpfLifespanArticle />}
+            {current.slug === "common-myths-about-paint-protection-film" && <PpfMythsArticle />}
           </div>
         </section>
       </div>
