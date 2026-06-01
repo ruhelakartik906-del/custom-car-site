@@ -668,6 +668,122 @@ const PpfLifespanArticle = () => (
   </>
 );
 
+const PpfMythsArticle = () => (
+  <>
+    <div className="flex items-center gap-2 text-xs tracking-[0.4em] uppercase text-gold mb-4">
+      <BookOpen className="h-4 w-4" /> Paint Protection
+    </div>
+    <h2 className="font-display text-4xl md:text-5xl">
+      Common Myths About Paint Protection Film You Should Know
+    </h2>
+    <div className="mt-4 h-px w-20 gold-divider" />
+
+    <div className="mt-8 grid lg:grid-cols-3 gap-10">
+      <div className="lg:col-span-2 space-y-5">
+        <p className="text-muted-foreground leading-relaxed">
+          Paint Protection Film (PPF) has become one of the most trusted solutions for protecting vehicle paint from scratches, stone chips, road debris, and environmental damage. However, despite its growing popularity, there are still many misconceptions surrounding this advanced protection technology.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          These myths often prevent car owners from making informed decisions about protecting their vehicles. In this article, we'll separate fact from fiction and uncover the truth behind some of the most common Paint Protection Film myths.
+        </p>
+      </div>
+      <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-elegant">
+        <img src={ppfMythsHero} alt="Common PPF Myths — CLNHYGEN" loading="lazy" className="h-full w-full object-cover" />
+      </div>
+    </div>
+
+    <div className="mt-14 space-y-6">
+      {[
+        {
+          myth: "Myth 1: PPF Is Only for Luxury Cars",
+          reality: "PPF is beneficial for any vehicle owner who wants to preserve their car's appearance and resale value. Whether you drive a hatchback, sedan, SUV, sports car, or luxury vehicle, your paint faces the same risks from road debris, scratches, and environmental contaminants. Every vehicle can benefit from paint protection.",
+        },
+        {
+          myth: "Myth 2: PPF Changes the Appearance of the Car",
+          reality: "Modern Paint Protection Films are designed to be virtually invisible. High-quality PPF maintains the original color and finish of your vehicle while providing an added layer of protection. Many premium films even enhance the paint's gloss and depth. For those looking for a unique look, matte and satin PPF options are also available.",
+        },
+        {
+          myth: "Myth 3: PPF Turns Yellow Quickly",
+          reality: "This myth may have been true with older generations of Paint Protection Film. Today's premium PPF products feature advanced UV-resistant technology that helps prevent yellowing and discoloration. Most reputable manufacturers back their films with warranties covering yellowing and other defects. Properly maintained modern PPF can remain clear and transparent for many years.",
+        },
+        {
+          myth: "Myth 4: PPF Is the Same as Ceramic Coating",
+          reality: "Although both are popular paint protection solutions, they serve different purposes. Paint Protection Film provides physical protection against scratches and stone chips, features self-healing properties, and absorbs impacts from road debris. Ceramic Coating enhances gloss and shine, improves water repellency, and makes cleaning easier. Many vehicle owners choose to combine both for maximum protection and appearance.",
+        },
+        {
+          myth: "Myth 5: PPF Prevents All Damage",
+          reality: "PPF offers excellent protection, but it is not indestructible. While it significantly reduces the risk of stone chips, scratches, road debris damage, and minor abrasions, very sharp objects, severe impacts, or major accidents can still damage both the film and the underlying paint. PPF is designed to minimize damage, not make a vehicle completely damage-proof.",
+        },
+        {
+          myth: "Myth 6: PPF Requires High Maintenance",
+          reality: "Paint Protection Film is actually easier to maintain than unprotected paint. Most premium films feature hydrophobic top layers that help repel water, dirt, and contaminants. Regular washing and basic care are usually enough to keep the film looking great. Maintenance requirements are often lower than many people expect.",
+        },
+        {
+          myth: "Myth 7: PPF Damages Paint When Removed",
+          reality: "Professionally installed and properly removed PPF does not damage factory paint. In fact, one of the biggest advantages of Paint Protection Film is that it preserves the original paint underneath. When removed correctly, the paint often looks significantly better than unprotected areas. Problems typically occur only when low-quality films are used or improper removal methods are followed.",
+        },
+        {
+          myth: "Myth 8: PPF Doesn't Last Very Long",
+          reality: "Modern Paint Protection Films are built for long-term performance. Premium PPF products commonly last 5 to 10 years, sometimes longer with proper care. Advancements in materials and adhesive technology have significantly improved durability compared to earlier generations.",
+        },
+        {
+          myth: "Myth 9: Scratches on PPF Are Permanent",
+          reality: "Most high-quality Paint Protection Films now feature self-healing technology. Minor scratches and swirl marks can disappear when exposed to sunlight, warm water, or engine heat. This self-healing capability helps maintain a smooth and flawless appearance over time.",
+        },
+        {
+          myth: "Myth 10: PPF Is Too Expensive",
+          reality: "While PPF involves an upfront investment, it can save money in the long run. It helps reduce paint correction costs, repainting expenses, repair bills, and depreciation caused by cosmetic damage. For many vehicle owners, the long-term protection and preserved resale value justify the investment.",
+        },
+      ].map((item) => (
+        <div key={item.myth} className="bg-card border border-border p-6 rounded-sm">
+          <div className="flex items-start gap-3">
+            <HelpCircle className="h-5 w-5 text-gold shrink-0 mt-1" />
+            <div>
+              <h4 className="font-display text-xl">{item.myth}</h4>
+              <div className="mt-3">
+                <span className="text-sm font-medium text-gold uppercase tracking-wider">Reality:</span>
+                <p className="mt-2 text-muted-foreground leading-relaxed">{item.reality}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-14 bg-card border border-border p-8 rounded-sm">
+      <h3 className="font-display text-2xl">Why Understanding These Myths Matters</h3>
+      <p className="mt-4 text-muted-foreground leading-relaxed">
+        Many misconceptions about Paint Protection Film are based on outdated information or experiences with older products. Today's PPF technology is more advanced, durable, and visually appealing than ever before.
+      </p>
+      <p className="mt-4 text-muted-foreground leading-relaxed">
+        Understanding the facts helps vehicle owners make informed decisions about protecting their investment and avoiding unnecessary paint repair costs.
+      </p>
+    </div>
+
+    <div className="mt-14">
+      <h3 className="font-display text-3xl flex items-center gap-3">
+        <Sparkles className="h-6 w-6 text-gold" /> Final Thoughts
+      </h3>
+      <div className="mt-6 space-y-5">
+        <p className="text-muted-foreground leading-relaxed">
+          Paint Protection Film continues to be one of the most effective ways to safeguard a vehicle's exterior. By separating myths from reality, it's clear that modern PPF offers long-lasting protection, self-healing capabilities, improved appearance, and excellent value.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          If you're considering paint protection for your vehicle, don't let outdated myths influence your decision. With professional installation and quality materials, Paint Protection Film can help keep your car looking newer for years while protecting one of its most valuable assets — its paint.
+        </p>
+      </div>
+      <div className="mt-6 flex flex-wrap gap-4">
+        <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-background px-7 py-3 rounded-sm font-medium hover:opacity-90 transition">
+          Book PPF Consultation <ArrowRight className="h-4 w-4" />
+        </Link>
+        <Link to="/services" className="inline-flex items-center gap-2 border border-border px-7 py-3 rounded-sm font-medium hover:border-gold transition">
+          Explore Services
+        </Link>
+      </div>
+    </div>
+  </>
+);
+
 const Blog = () => {
   const [active, setActive] = useState<string | null>(null);
   const current = articles.find((a) => a.slug === active);
