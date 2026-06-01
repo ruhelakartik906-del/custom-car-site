@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Sparkles, Search, MapPin, User } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -32,6 +32,17 @@ const vehicles = [
 const Header = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     cn(
@@ -163,7 +174,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur">
+        <div className="lg:hidden fixed inset-x-0 top-[70px] bottom-0 z-40 overflow-y-auto border-t border-border bg-background/95 backdrop-blur">
           <nav className="container mx-auto py-6 flex flex-col gap-1">
             {[
               { to: "/", label: "Home" },
