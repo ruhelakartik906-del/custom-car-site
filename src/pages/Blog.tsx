@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Sparkles, ShieldCheck, Gem, BookOpen } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles, ShieldCheck, Gem, BookOpen, Car } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import ppfImage from "@/assets/service-ppf.jpg";
 
@@ -41,22 +41,6 @@ const Blog = () => (
     <section className="py-16 border-b border-border bg-secondary/20">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-6">
-          {cityPosts.map((p) => (
-            <a
-              key={p.slug}
-              href={`#${p.slug}`}
-              className="group bg-card border border-border p-7 rounded-sm hover:border-gold transition"
-            >
-              <div className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-gold">
-                <MapPin className="h-4 w-4" /> {p.city}
-              </div>
-              <h3 className="mt-4 font-display text-2xl">{p.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground line-clamp-3">{p.intro[0]}</p>
-              <span className="mt-5 inline-flex items-center gap-2 text-sm text-gold group-hover:gap-3 transition-all">
-                Read article <ArrowRight className="h-4 w-4" />
-              </span>
-            </a>
-          ))}
           {articles.map((a) => (
             <a
               key={a.slug}
@@ -76,91 +60,6 @@ const Blog = () => (
         </div>
       </div>
     </section>
-
-    {/* City Guide Posts */}
-    {cityPosts.map((p, idx) => (
-      <article
-        id={p.slug}
-        key={p.slug}
-        className={`py-20 border-b border-border ${idx % 2 === 1 ? "bg-secondary/20" : ""}`}
-      >
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex items-center gap-2 text-xs tracking-[0.4em] uppercase text-gold mb-4">
-            <MapPin className="h-4 w-4" /> {p.city}
-          </div>
-          <h2 className="font-display text-4xl md:text-5xl">{p.title}</h2>
-          <div className="mt-4 h-px w-20 gold-divider" />
-
-          <div className="mt-8 grid lg:grid-cols-3 gap-10">
-            <div className="lg:col-span-2 space-y-5">
-              {p.intro.map((para, i) => (
-                <p key={i} className="text-muted-foreground leading-relaxed">{para}</p>
-              ))}
-            </div>
-            <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-elegant">
-              <img src={detailing} alt={`${p.title} — CLNHYGEN`} loading="lazy" className="h-full w-full object-cover" />
-            </div>
-          </div>
-
-          {/* Services */}
-          <div className="mt-14">
-            <h3 className="font-display text-3xl flex items-center gap-3">
-              <Gem className="h-6 w-6 text-gold" /> Premium Car Detailing Services in {p.city}
-            </h3>
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {p.services.map((s) => (
-                <div key={s.title} className="bg-card border border-border p-6 rounded-sm">
-                  <h4 className="font-display text-xl">{s.title}</h4>
-                  <ul className="mt-4 grid gap-2.5">
-                    {s.items.map((it) => <Bullet key={it}>{it}</Bullet>)}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Why Choose */}
-          <div className="mt-14 grid lg:grid-cols-2 gap-10">
-            <div>
-              <h3 className="font-display text-3xl flex items-center gap-3">
-                <ShieldCheck className="h-6 w-6 text-gold" /> Why Choose Our Studio in {p.city}?
-              </h3>
-              <ul className="mt-6 grid gap-3">
-                {p.whyChoose.map((b) => <Bullet key={b}>{b}</Bullet>)}
-              </ul>
-              <p className="mt-6 text-muted-foreground leading-relaxed">
-                Professional car detailing not only improves your vehicle's appearance but also helps maintain resale value and protects the original paint for years.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-display text-3xl flex items-center gap-3">
-                <Sparkles className="h-6 w-6 text-gold" /> Benefits of Professional Detailing
-              </h3>
-              <ul className="mt-6 grid gap-3">
-                {p.benefits.map((b) => <Bullet key={b}>{b}</Bullet>)}
-              </ul>
-            </div>
-          </div>
-
-          {/* Closing */}
-          <div className="mt-14 bg-card border border-border p-8 rounded-sm">
-            <p className="text-muted-foreground leading-relaxed">{p.closing.search}</p>
-            <h3 className="mt-8 font-display text-2xl flex items-center gap-3">
-              <Car className="h-6 w-6 text-gold" /> Book Premium Car Detailing in {p.city}
-            </h3>
-            <p className="mt-3 text-muted-foreground leading-relaxed">{p.closing.book}</p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <Link to="/contact" className="inline-flex items-center gap-2 bg-gold text-background px-7 py-3 rounded-sm font-medium hover:opacity-90 transition">
-                Book Now <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link to="/services" className="inline-flex items-center gap-2 border border-border px-7 py-3 rounded-sm font-medium hover:border-gold transition">
-                Explore Services
-              </Link>
-            </div>
-          </div>
-        </div>
-      </article>
-    ))}
 
     {/* PPF Article */}
     <article
