@@ -48,7 +48,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex gap-3"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Mohkampur Industrial Area, Meerut, Uttar Pradesh</li>
             <li className="flex gap-3"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /> +91 84499 00095</li>
-            <li className="flex gap-3"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> hello@clnhygen.com</li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /> clnhygenofficial@gmail.com</li>
           </ul>
         </div>
       </div>
