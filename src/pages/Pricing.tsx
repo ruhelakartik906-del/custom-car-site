@@ -61,7 +61,7 @@ const products = [
   { title: "Blue Microfiber Combo Polishing Pad", image: blueMicrofiberCombo1, link: "#" },
   { title: "Blue Dual-Action Microfiber Pad", image: blueMicrofiberCombo2, link: "#" },
   { title: "Blue Microfiber Cutting & Finishing Set", image: blueMicrofiberCombo3, link: "#" },
-  { title: "Blue Hybrid Foam & Microfiber Pad", image: blueMicrofiberCombo4, link: "#" },
+  { title: "Blue Hybrid Foam & Microfiber Pad", image: blueMicrofiberCombo4, link: "https://www.amazon.in/dp/B0H11GXG75" },
   { title: "Orange Microfiber Polishing Combo Pad", image: orangeMicrofiberCombo1, link: "https://www.amazon.in/dp/B0H1297XN3" },
   { title: "CLNHYGEN Microfiber OSP Cutting Pad 5.5 Inch", image: orangeMicrofiberCombo2, link: "https://www.amazon.in/dp/B0H11ZY3GM" },
   { title: "CLNHYGEN | Lake Country | Blue Polishing Pad 5.5 Inch", image: blueHdCuttingFoam, link: "https://www.amazon.in/dp/B0H15MRHCS" },
