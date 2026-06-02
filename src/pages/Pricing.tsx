@@ -19,6 +19,10 @@ import orangeSoftFinishing from "@/assets/products/orange-soft-finishing-pad.jpg
 import detailingApplicator from "@/assets/products/detailing-foam-applicator.png";
 import polishingKit from "@/assets/products/premium-polishing-kit.png";
 import microfiberCloth from "@/assets/products/microfiber-cleaning-cloth.png";
+import orangeMicrofiberCutting from "@/assets/products/orange-microfiber-cutting-pad.jpg";
+import purpleWool from "@/assets/products/purple-wool-polishing-pad.jpg";
+import blueMicrofiberFinishing from "@/assets/products/blue-microfiber-finishing-pad.jpg";
+import blueHybridMicrofiber from "@/assets/products/blue-hybrid-microfiber-pad.jpg";
 
 const products = [
   { title: "Blue Soft Finishing Foam Pad", image: blueFinishing },
@@ -37,6 +41,10 @@ const products = [
   { title: "Premium Detailing Foam Applicator", image: detailingApplicator },
   { title: "Professional Polishing & Buffing Kit", image: polishingKit },
   { title: "Premium Microfiber Cleaning Cloth", image: microfiberCloth },
+  { title: "Orange Microfiber Hybrid Cutting Pad", image: orangeMicrofiberCutting },
+  { title: "Purple Wool Polishing & Finishing Pad", image: purpleWool },
+  { title: "Blue Microfiber Soft Finishing Pad", image: blueMicrofiberFinishing },
+  { title: "Blue Hybrid Microfiber Cutting Pad", image: blueHybridMicrofiber },
 ];
 
 const Pricing = () => {
