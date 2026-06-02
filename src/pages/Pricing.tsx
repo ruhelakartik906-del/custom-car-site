@@ -15,6 +15,10 @@ import orangeWhiteStripe from "@/assets/products/orange-white-stripe-pad.jpg";
 import blueWhiteStripe from "@/assets/products/blue-white-stripe-pad.jpg";
 import blueMini from "@/assets/products/blue-mini-pad.jpg";
 import blackCcsDimple from "@/assets/products/black-ccs-dimple-pad.jpg";
+import orangeSoftFinishing from "@/assets/products/orange-soft-finishing-pad.jpg";
+import detailingApplicator from "@/assets/products/detailing-foam-applicator.png";
+import polishingKit from "@/assets/products/premium-polishing-kit.png";
+import microfiberCloth from "@/assets/products/microfiber-cleaning-cloth.png";
 
 const products = [
   { title: "Blue Soft Finishing Foam Pad", image: blueFinishing },
@@ -29,6 +33,10 @@ const products = [
   { title: "Blue Soft Polishing Foam Pad", image: blueWhiteStripe },
   { title: "Blue Mini Detailing Foam Pad", image: blueMini },
   { title: "Black CCS Dimple Cutting Foam Pad", image: blackCcsDimple },
+  { title: "Orange Soft Finishing Foam Pad", image: orangeSoftFinishing },
+  { title: "Premium Detailing Foam Applicator", image: detailingApplicator },
+  { title: "Professional Polishing & Buffing Kit", image: polishingKit },
+  { title: "Premium Microfiber Cleaning Cloth", image: microfiberCloth },
 ];
 
 const Pricing = () => {
