@@ -59,7 +59,7 @@ const products = [
   { title: "LC Light Cutting Microfiber Pad 3.5 Inch", image: blackOrangeMicrofiber, link: "#" },
   { title: "Premium Wool Heavy Cutting Pad", image: woolCutting, link: "#" },
   { title: "Blue Microfiber Combo Polishing Pad", image: blueMicrofiberCombo1, link: "#" },
-  { title: "Blue Dual-Action Microfiber Pad", image: blueMicrofiberCombo2, link: "#" },
+  { title: "Blue Dual-Action Microfiber Pad", image: blueMicrofiberCombo2, link: "https://www.amazon.in/dp/B0H11W55SZ" },
   { title: "Blue Microfiber Cutting & Finishing Set", image: blueMicrofiberCombo3, link: "https://www.amazon.in/dp/B0H11QW1XY" },
   { title: "Blue Hybrid Foam & Microfiber Pad", image: blueMicrofiberCombo4, link: "https://www.amazon.in/dp/B0H11GXG75" },
   { title: "Orange Microfiber Polishing Combo Pad", image: orangeMicrofiberCombo1, link: "https://www.amazon.in/dp/B0H1297XN3" },
