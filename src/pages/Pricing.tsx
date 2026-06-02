@@ -64,7 +64,7 @@ const products = [
   { title: "Blue Hybrid Foam & Microfiber Pad", image: blueMicrofiberCombo4, link: "#" },
   { title: "Orange Microfiber Polishing Combo Pad", image: orangeMicrofiberCombo1, link: "#" },
   { title: "Orange Dual-Sided Microfiber Pad", image: orangeMicrofiberCombo2, link: "#" },
-  { title: "Blue HD Cutting Foam Pad Pro", image: blueHdCuttingFoam, link: "#" },
+  { title: "CLNHYGEN | Lake Country | Blue Polishing Pad 5.5 Inch", image: blueHdCuttingFoam, link: "#" },
 ];
 
 const Pricing = () => {
