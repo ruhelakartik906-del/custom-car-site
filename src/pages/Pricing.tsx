@@ -53,7 +53,7 @@ const products = [
   { title: "Professional Polishing & Buffing Kit", image: polishingKit, link: "#" },
   { title: "Premium Microfiber Cleaning Cloth", image: microfiberCloth, link: "#" },
   { title: "Orange Microfiber Hybrid Cutting Pad", image: orangeMicrofiberCutting, link: "#" },
-  { title: "Purple Wool Polishing & Finishing Pad", image: purpleWool, link: "#" },
+  { title: "Purple Wool Polishing & Finishing Pad", image: purpleWool, link: "https://www.amazon.in/dp/B0H11S9PZR" },
   { title: "Blue Microfiber Soft Finishing Pad", image: blueMicrofiberFinishing, link: "https://www.amazon.in/dp/B0H11RS193" },
   { title: "Blue Hybrid Microfiber Cutting Pad", image: blueHybridMicrofiber, link: "https://www.amazon.in/dp/B0H11VMKPH" },
   { title: "LC Light Cutting Microfiber Pad 3.5 Inch", image: blackOrangeMicrofiber, link: "https://www.amazon.in/dp/B0GY17HRW3" },
