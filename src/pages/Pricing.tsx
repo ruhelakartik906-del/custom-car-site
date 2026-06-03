@@ -32,6 +32,12 @@ import blueMicrofiberCombo4 from "@/assets/products/blue-microfiber-combo-pad-4.
 import orangeMicrofiberCombo1 from "@/assets/products/orange-microfiber-combo-pad-1.jpg";
 import orangeMicrofiberCombo2 from "@/assets/products/orange-microfiber-combo-pad-2.jpg";
 import blueHdCuttingFoam from "@/assets/products/blue-hd-cutting-foam-pad.jpg";
+import newBlueFoamPad from "@/assets/products/new-blue-foam-pad.jpg";
+import newYellowBacking1 from "@/assets/products/new-yellow-backing-1.jpg";
+import newYellowBacking2 from "@/assets/products/new-yellow-backing-2.jpg";
+import newPurpleWool from "@/assets/products/new-purple-wool.jpg";
+import newOrangeWhiteMicrofiber from "@/assets/products/new-orange-white-microfiber.jpg";
+import newBlueWhiteMicrofiber from "@/assets/products/new-blue-white-microfiber.jpg";
 
 // 👇 Add the product URL inside the `link` field for each product below.
 // Example: link: "https://your-shop.com/product-page"
@@ -48,10 +54,12 @@ const products = [
   { title: "Blue Soft Polishing Foam Pad", image: blueWhiteStripe, link: "https://www.amazon.in/dp/B0H11W6Q3P" },
   { title: "Blue Mini Detailing Foam Pad", image: blueMini, link: "https://www.amazon.in/dp/B0H11NRY5B" },
   { title: "Black CCS Dimple Cutting Foam Pad", image: blackCcsDimple, link: "https://www.amazon.in/dp/B0H11N97JJ" },
-  { title: "Orange Soft Finishing Foam Pad", image: orangeSoftFinishing, link: "#" },
-  { title: "Premium Detailing Foam Applicator", image: detailingApplicator, link: "#" },
-  { title: "Professional Polishing & Buffing Kit", image: polishingKit, link: "#" },
-  { title: "Premium Microfiber Cleaning Cloth", image: microfiberCloth, link: "#" },
+  { title: "Blue HD Cutting & Polishing Foam Pad", image: newBlueFoamPad, link: "https://www.amazon.in/dp/B0H11W6Q3P" },
+  { title: "Yellow Hook & Loop Backing Plate Pro", image: newYellowBacking1, link: "https://www.amazon.in/dp/B0H11X8QCN" },
+  { title: "Yellow Heavy Duty Backing Plate", image: newYellowBacking2, link: "https://www.amazon.in/dp/B0H11P6BPH" },
+  { title: "Purple Wool Cutting & Polishing Pad", image: newPurpleWool, link: "https://www.amazon.in/dp/B0H11GKZZY" },
+  { title: "Orange & White Hybrid Microfiber Pad", image: newOrangeWhiteMicrofiber, link: "https://www.amazon.in/dp/B0H11GY81F" },
+  { title: "Blue & White Microfiber Cutting Pad", image: newBlueWhiteMicrofiber, link: "https://www.amazon.in/dp/B0H11RS193" },
   { title: "Orange Microfiber Hybrid Cutting Pad", image: orangeMicrofiberCutting, link: "https://www.amazon.in/dp/B0H11GY81F" },
   { title: "Purple Wool Polishing & Finishing Pad", image: purpleWool, link: "https://www.amazon.in/dp/B0H11S9PZR" },
   { title: "Blue Microfiber Soft Finishing Pad", image: blueMicrofiberFinishing, link: "https://www.amazon.in/dp/B0H11RS193" },
