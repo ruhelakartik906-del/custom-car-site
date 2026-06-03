@@ -36,7 +36,7 @@ import blueHdCuttingFoam from "@/assets/products/blue-hd-cutting-foam-pad.jpg";
 // 👇 Add the product URL inside the `link` field for each product below.
 // Example: link: "https://your-shop.com/product-page"
 const products = [
-  { title: "Blue Soft Finishing Foam Pad", image: blueFinishing, link: "#" },
+  { title: "Blue Soft Finishing Foam Pad", image: blueFinishing, link: "https://www.amazon.in/dp/B0H11XH6G5" },
   { title: "Yellow Hook & Loop Backing Plate", image: yellowBacking, link: "https://www.amazon.in/dp/B0H11X8QCN" },
   { title: "Black CCS Heavy Cutting Foam Pad", image: blackCcs, link: "https://www.amazon.in/dp/B0H11N97JJ" },
   { title: "Orange CCS Medium Polishing Pad", image: orangeCcs, link: "#" },
