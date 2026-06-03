@@ -45,7 +45,7 @@ const products = [
   { title: "CLNHYGEN SDO Blue Heavy Polishing Pad 1 Inch Mini for Tight Area ", image: blueFinishing, link: "https://www.amazon.in/dp/B0H11XH6G5" },
   { title: "CLNHYGEN 6 Inch Backing Plate for Car Polisher", image: yellowBacking, link: "https://www.amazon.in/dp/B0H11X8QCN" },
   { title: "CLNHYGEN SDO Black Finishing Pad 5.5 Inch for Car Detailing & Final Gloss Finish", image: blackCcs, link: "https://www.amazon.in/dp/B0H11N97JJ" },
-  { title: "CLNHYGEN | Lake Country | 0Orange Polishing Pad 5.5 Inch for Car Polishing ", image: orangeCcs, link: "#" },
+  { title: "CLNHYGEN | Lake Country | 0Orange Polishing Pad 5.5 Inch for Car Polishing ", image: orangeCcs, link: "https://www.amazon.in/dp/B0H15JSP9N" },
   { title: "CLNHYGEN | Lake Country | Orange Polishing Pad 5.5 Inch for Car Paint Correction ", image: orangeCutting, link: "#" },
   { title: "CLNHYGEN | Lake Country | Blue Polishing Pad 5.5 Inch for Car Detailing", image: blueHd, link: "https://www.amazon.in/dp/B0H15MRHCS" },
   { title: "CLNHYGEN Orange Heavy Polishing Pad 2 Inch Mini for Precision Car Detailing", image: orangeLight, link: "https://www.amazon.in/dp/B0H15P494F" },
