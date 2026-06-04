@@ -32,15 +32,7 @@ import detailing from "@/assets/service-detailing.jpg";
 import paint from "@/assets/service-paint.jpg";
 
 const brands = [
-  "Luxury Vehicles",
-  "Sports Cars",
-  "Supercars",
-  "SUVs",
-  "Electric Vehicles",
-  "Performance Cars",
-  "Motorcycles",
-  "Commercial Fleets",
-  "Collector Vehicles",
+  "Mohkampur Industrial Area, Meerut, Uttar Pradesh",
 ];
 
 const services = [
