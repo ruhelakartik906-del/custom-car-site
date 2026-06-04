@@ -70,7 +70,7 @@ const whyUs = [
 const partners = [
   { name: "STEK", desc: "World leader in Paint Protection Film with advanced self-healing technology and superior optical clarity." },
   { name: "CARPRO", desc: "Globally respected leader in ceramic coating technology — long-lasting protection and outstanding gloss." },
-  { name: "AUOKROM", desc: "Advanced automotive protection technologies for enhanced durability and long-term vehicle preservation." },
+  { name: "AUTOKROM", desc: "Advanced automotive protection technologies for enhanced durability and long-term vehicle preservation." },
   { name: "Saint-Gobain", desc: "Internationally recognized expertise in advanced materials and automotive protection technologies." },
 ];
 
