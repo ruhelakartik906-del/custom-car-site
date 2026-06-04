@@ -119,7 +119,7 @@ const BookCTA = () => (
       <div className="max-w-4xl mx-auto text-center text-primary-foreground">
         <p className="text-xs tracking-[0.4em] uppercase text-gold mb-4">Book Premium Services</p>
         <h2 className="font-display text-4xl md:text-5xl leading-tight">
-          Best PPF in Meerut · Ceramic Coating in Meerut · Luxury Car Detailing
+          Best PPF · Ceramic Coating · Luxury Car Detailing
         </h2>
         <p className="mt-6 text-primary-foreground/80 max-w-2xl mx-auto">
           Protect your investment with professional car detailing and paint protection at CLNHYGEN.
