@@ -1340,6 +1340,8 @@ const Blog = () => {
             {current.slug === "ppf-vs-ceramic-coating-which-is-better" && <PpfVsCeramicArticle />}
             {current.slug === "how-long-does-paint-protection-film-last" && <PpfLifespanArticle />}
             {current.slug === "common-myths-about-paint-protection-film" && <PpfMythsArticle />}
+            {cityData[current.slug] && <CityArticle data={cityData[current.slug]} />}
+
           </div>
         </section>
       </div>
