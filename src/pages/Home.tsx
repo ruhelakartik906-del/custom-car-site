@@ -535,17 +535,6 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto">
-            <h3 className="text-center font-display text-2xl mb-8">Locations We Serve</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {["Meerut","Dehradun","Bijnor","Vikas Nagar","Muzaffarnagar","Ghaziabad","Delhi","Gurgaon","Bareilly"].map((city) => (
-                <div key={city} className="flex items-center gap-2 rounded-2xl border border-border bg-card px-4 py-3 hover:border-gold transition-smooth">
-                  <MapPin className="h-4 w-4 text-gold shrink-0" />
-                  <span className="text-sm">{city}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
           <div className="mt-16 max-w-4xl mx-auto">
             <h3 className="text-center font-display text-2xl mb-8">Why Choose CLNHYGEN?</h3>
