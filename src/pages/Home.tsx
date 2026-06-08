@@ -521,54 +521,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PRESENCE / LOCATIONS */}
-      <section className="py-24 border-b border-border bg-secondary/20">
-        <div className="container mx-auto">
-          <div className="text-center mb-14 max-w-3xl mx-auto">
-            <p className="text-xs tracking-[0.4em] uppercase text-gold mb-3">Our Network</p>
-            <h2 className="font-display text-4xl md:text-5xl">Our Presence Across North India</h2>
-            <div className="mt-6 h-px w-20 gold-divider mx-auto" />
-            <p className="mt-6 text-muted-foreground leading-relaxed">
-              CLNHYGEN proudly serves customers across major cities in North India with premium Paint Protection Film (PPF),
-              Ceramic Coating, Car Detailing, and Automotive Surface Protection solutions. Through our expanding dealer and
-              partner network, we provide professional installation and after-sales support to luxury and premium vehicle owners.
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <h3 className="text-center font-display text-2xl mb-8">Locations We Serve</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {["Meerut","Dehradun","Bijnor","Vikas Nagar","Muzaffarnagar","Ghaziabad","Delhi","Gurgaon","Bareilly"].map((city) => (
-                <div key={city} className="flex items-center gap-2 rounded-2xl border border-border bg-card px-4 py-3 hover:border-gold transition-smooth">
-                  <MapPin className="h-4 w-4 text-gold shrink-0" />
-                  <span className="text-sm">{city}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-16 max-w-4xl mx-auto">
-            <h3 className="text-center font-display text-2xl mb-8">Why Choose CLNHYGEN?</h3>
-            <ul className="grid sm:grid-cols-2 gap-4">
-              {[
-                "Authorized Distributor of STEK PPF India",
-                "Premium Paint Protection Film Solutions",
-                "Certified Installation Network",
-                "Ceramic Coating & Detailing Experts",
-                "Professional Support & Warranty Assistance",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 rounded-2xl border border-border bg-card p-4">
-                  <CheckCircle2 className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-10 text-center text-muted-foreground italic">
-              Protecting vehicles across North India with world-class automotive protection solutions.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* CLOSING TAGLINE */}
       <section className="py-20">
